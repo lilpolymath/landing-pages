@@ -203,6 +203,10 @@ footer {
   footer {
     margin: 0 0 1em;
   }
+
+  .header a {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -216,6 +220,10 @@ footer {
 
   .hamburger {
     display: inline;
+  }
+
+  svg {
+    margin: 0;
   }
 }
 
