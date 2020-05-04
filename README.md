@@ -4,4 +4,4 @@ I am transforming [Figma](https://figmaz.com/) landing pages UIs made by Gravity
 
 | Project | Live Url                                                  | Preview                                                                                                      | Status             |
 | ------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------ |
-| Gravity | [View Link](https://lilpolymath.github.io/landing-pages/) | <img src="https://github.com/lilpolymath/landing-pages/tree/master/src/snapshots/Header1.png" width="120" /> | :white_check_mark: |
+| Gravity | [View Link](https://lilpolymath.github.io/landing-pages/) | <img src="https://raw.githubusercontent.com/lilpolymath/landing-pages/master/src/snapshots/Header1.png" width="120" /> | :white_check_mark: |
