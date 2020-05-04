@@ -21,7 +21,6 @@ body {
 }
 
 .header a {
-  color: white;
   padding: 12px;
   text-decoration: none;
   font-size: 1.25em;
@@ -31,6 +30,8 @@ body {
   font-size: 2em;
   line-height: 25px;
   padding: 12px 0;
+  color: white;
+  font-weight: bold;
 }
 
 .nav {
@@ -41,15 +42,18 @@ body {
 
 .nav-item {
   padding: 20;
-  color: red;
 }
 
 ul {
   list-style-type: none;
 }
 
-.active a {
-  color: red;
+.nav-item a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a.active {
+  color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -159,6 +163,17 @@ p {
   text-align: center;
 }
 
+svg {
+  fill: white;
+  height: 32px;
+  width: 32px;
+  margin-right: 1em;
+}
+
+footer {
+  margin: 2em 0 0;
+}
+
 @media screen and (max-width: 800px) {
   .hero {
     flex-direction: column-reverse;
@@ -176,9 +191,17 @@ p {
   .hero {
     margin-top: 4em;
   }
+
+  body {
+    padding: 0px 32px;
+  }
+
+  footer {
+    margin: 0 0 1em;
+  }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 420px) {
   .image {
     width: 100%;
   }
@@ -221,5 +244,11 @@ p {
     font-size: 12px;
     height: 50px;
     width: 140px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

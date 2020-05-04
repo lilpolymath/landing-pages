@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/Placeholder.png';
+import image from '../../assets/images/Placeholder.png';
 
 const Hero = () => {
   return (
