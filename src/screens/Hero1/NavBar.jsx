@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuIcon from '../../assets/icons/MenuIcon';
 
 const NavBar = () => {
   return (
@@ -22,6 +23,9 @@ const NavBar = () => {
           <a href='#default'>Contact Us</a>
         </li>
       </ul>
+      <a className='hamburger' href='#default'>
+        <MenuIcon />
+      </a>
     </nav>
   );
 };

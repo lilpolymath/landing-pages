@@ -56,6 +56,10 @@ a.active {
   color: rgb(255, 255, 255);
 }
 
+.hamburger {
+  display: none;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -116,7 +120,7 @@ button {
   margin: 32px 0;
 }
 
-a:hover {
+li > a:hover {
   color: #4737ff;
   background-color: white;
 }
@@ -201,13 +205,17 @@ footer {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .image {
     width: 100%;
   }
 
   .nav {
     display: none;
+  }
+
+  .hamburger {
+    display: inline;
   }
 }
 
