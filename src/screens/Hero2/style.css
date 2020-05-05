@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  font: 14px 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: black;
+  max-width: 1140px;
+  padding: 0px 16px;
+  margin: auto;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+a {
+  font-size: 2em;
+  line-height: 25px;
+  padding: 12px 0;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: inline;
+}
+
+svg {
+  fill: black;
+  height: 32px;
+  width: 32px;
+  margin-right: 1em;
+}
+
+main {
+  max-width: 900px;
+  margin: 5em auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+
+.main h2 {
+  font-size: 54px;
+  color: #f96241;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.desc {
+  font-size: 18px;
+  color: rgba(22, 22, 22, 0.8);
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+button {
+  letter-spacing: 3px;
+  color: #4737ff;
+  background-color: white;
+  outline: none !important;
+  border: none;
+  font-size: 14px;
+  height: 50px;
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 3px solid #4737ff;
+}
+
+.first {
+  background-color: #4737ff;
+  color: white;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.first:hover {
+  color: #4737ff;
+  background-color: white;
+  border: 3px solid #4737ff;
+}
+
+.second:hover {
+  background-color: #4737ff;
+  color: white;
+}
+
+.external {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+.preview {
+  margin-top: 80px;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin: 32px auto 0;
+    padding: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .main h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .desc {
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.8);
+    line-height: 24px;
+    margin-top: 30px;
+  }
+
+  .buttons {
+    margin: 24px 0 0;
+    align-items: center;
+  }
+
+  .preview {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    margin: 24px 0 0;
+    align-items: center;
+  }
+
+  .preview {
+    margin-top: 48px;
+  }
+}
