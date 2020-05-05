@@ -1,6 +1,6 @@
 # Figma to React
 
-I am transforming [Figma](https://figmaz.com/) landing pages UIs made by Gravity to React code
+I am transforming [Figma](https://figmaz.com/) landing pages UIs made by Gravity to React with is mostly HTML and CSS.
 
 | Project     | Live Url                                                  | Preview                                                                                                                | Status             |
 | ----------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------ |
