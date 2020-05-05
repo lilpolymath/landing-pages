@@ -1,5 +1,6 @@
 import React from 'react';
-import image from '../../assets/images/Browser.png';
+const imageSrc =
+  'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Browser_fswsi8.png';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
       </section>
       <section className='preview'>
         <figure>
-          <img className='image' alt='' src={image} />
+          <img className='image' alt='' src={imageSrc} />
         </figure>
       </section>
     </main>
