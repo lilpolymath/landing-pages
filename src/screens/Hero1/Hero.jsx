@@ -1,5 +1,7 @@
 import React from 'react';
-import image from '../../assets/images/Placeholder.png';
+
+const imageSrc =
+  'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Placeholder_hoy0ma.png';
 
 const Hero = () => {
   return (
@@ -20,7 +22,7 @@ const Hero = () => {
         </div>
         <div className='right'>
           <figure>
-            <img src={image} className='image' alt='hollywood' />
+            <img src={imageSrc} className='image' alt='hollywood' />
           </figure>
           <div className='play'>
             <div className='play-button'></div>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 const imageSrc =
   'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Browser_fswsi8.png';
 
