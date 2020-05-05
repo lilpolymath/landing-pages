@@ -3,7 +3,7 @@ import image from '../../assets/images/Placeholder.png';
 
 const Hero = () => {
   return (
-    <div>
+    <main>
       <section className='hero'>
         <div className='left'>
           <p className='label'>Shooting Stars</p>
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
