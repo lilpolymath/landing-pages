@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 // import HeroOne from '../src/screens/Hero1/index';
-import HeroTwo from './screens/Hero2';
+import HeroThree from './screens/Hero3';
 
 function App() {
-  return <HeroTwo />;
+  return <HeroThree />;
 }
 
 export default App;
