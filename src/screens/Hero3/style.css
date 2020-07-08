@@ -121,7 +121,7 @@ button {
   background-color: #4737ff;
   color: white;
   border: none;
-  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .first:hover {
@@ -214,6 +214,26 @@ ul {
   padding: 0;
 }
 
+.play-button {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid white;
+  margin-top: 20px;
+  margin-left: 27.5px;
+}
+
+.play {
+  position: absolute;
+  bottom: 150px;
+  left: -35px;
+  width: 65px;
+  height: 65px;
+  background-color: #4737ff;
+  text-align: center;
+}
+
 @media screen and (min-width: 769px) {
   nav {
     margin-top: 36px;
@@ -243,9 +263,14 @@ ul {
   }
 
   .hero-image {
-    margin-top: -225px;
+    margin-top: -230px;
     display: flex;
     flex: 0.4;
     z-index: 3;
+    position: relative;
+  }
+
+  .desc {
+    width: 70%;
   }
 }

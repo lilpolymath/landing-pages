@@ -32,6 +32,9 @@ const Hero = () => {
         <figure>
           <img className='image' alt='' src={imageSrc} />
         </figure>
+        <div className='play'>
+          <div className='play-button'></div>
+        </div>
       </section>
     </main>
   );
