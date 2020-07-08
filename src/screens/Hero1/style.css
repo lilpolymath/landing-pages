@@ -40,10 +40,6 @@ body {
   justify-content: space-between;
 }
 
-.nav-item {
-  padding: 20;
-}
-
 ul {
   list-style-type: none;
 }
