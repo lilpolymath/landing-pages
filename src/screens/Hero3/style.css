@@ -137,7 +137,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2em auto;
+  margin: 1em auto 2em;
 }
 
 .hero {
@@ -212,6 +212,7 @@ button {
 .hero-image {
   display: flex;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .image {
@@ -231,7 +232,7 @@ button {
 
 .play {
   position: absolute;
-  bottom: -20px;
+  bottom: 3px;
   width: 65px;
   height: 65px;
   background-color: #4737ff;
@@ -256,6 +257,7 @@ button {
 
   main {
     flex-direction: row;
+    margin: 112px auto 0;
   }
 
   .hero {
@@ -265,10 +267,6 @@ button {
 
   .header {
     margin-right: 36px;
-  }
-
-  main {
-    margin: 112px auto 0;
   }
 
   .hero-text {
