@@ -11,12 +11,12 @@ body {
   height: auto;
 }
 
-.pos {
+nav {
+  z-index: 10;
   position: relative;
 }
 
-nav {
-  z-index: 10;
+.pos {
   position: relative;
 }
 
@@ -56,87 +56,6 @@ ul {
 
 a.active {
   color: rgb(0, 0, 0);
-}
-
-svg {
-  fill: black;
-  height: 32px;
-  width: 32px;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 2em auto;
-}
-
-.hero {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.main {
-  font-size: 54px;
-  text-transform: capitalize;
-  font-weight: bold;
-  line-height: 64px;
-}
-
-.hero-text {
-  margin-top: 64px;
-}
-
-.desc {
-  font-size: 18px;
-  color: rgba(22, 22, 22, 0.8);
-  line-height: 28px;
-  margin: 30px 0;
-}
-
-.buttons {
-  display: flex;
-  flex: 0.3;
-  flex-direction: column;
-  justify-content: center;
-}
-
-button {
-  letter-spacing: 3px;
-  color: #4737ff;
-  background-color: white;
-  outline: none !important;
-  border: none;
-  font-size: 14px;
-  height: 50px;
-  width: 200px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 3px solid #4737ff;
-}
-
-.first {
-  background-color: #4737ff;
-  color: white;
-  border: none;
-  margin-top: 24px;
-}
-
-.first:hover {
-  color: #4737ff;
-  background-color: white;
-  border: 3px solid #4737ff;
-}
-
-.hero-image {
-  display: none;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
 }
 
 .hamburger {
@@ -212,6 +131,91 @@ a {
 
 ul {
   padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+
+.hero {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+svg {
+  fill: black;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+}
+
+svg:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main {
+  font-size: 54px;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.hero-text {
+  margin-top: 64px;
+}
+
+.desc {
+  font-size: 18px;
+  color: rgba(22, 22, 22, 0.8);
+  line-height: 28px;
+  margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  letter-spacing: 3px;
+  color: #4737ff;
+  background-color: white;
+  outline: none !important;
+  border: none;
+  font-size: 14px;
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 3px solid #4737ff;
+}
+
+.first {
+  background-color: #4737ff;
+  color: white;
+  border: none;
+  margin-top: 24px;
+}
+
+.first:hover {
+  color: #4737ff;
+  background-color: white;
+  border: 3px solid #4737ff;
+}
+
+.hero-image {
+  display: none;
+}
+
+.image {
+  width: 110%;
+  height: 100vh;
 }
 
 .play-button {
