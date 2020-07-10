@@ -135,7 +135,7 @@ ul {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 2em auto;
 }
@@ -165,7 +165,7 @@ svg:not(:last-child) {
 }
 
 .hero-text {
-  margin-top: 64px;
+  margin-top: 36px;
 }
 
 .desc {
@@ -210,12 +210,13 @@ button {
 }
 
 .hero-image {
-  display: none;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .image {
-  width: 110%;
-  height: 100vh;
+  width: 100%;
+  height: auto;
 }
 
 .play-button {
@@ -230,12 +231,15 @@ button {
 
 .play {
   position: absolute;
-  bottom: 150px;
-  left: -35px;
+  bottom: -20px;
   width: 65px;
   height: 65px;
   background-color: #4737ff;
   text-align: center;
+}
+
+.hero {
+  order: 1;
 }
 
 @media screen and (min-width: 769px) {
@@ -250,8 +254,13 @@ button {
     margin-right: 64px;
   }
 
+  main {
+    flex-direction: row;
+  }
+
   .hero {
     flex: 0.6;
+    order: 0;
   }
 
   .header {
@@ -266,6 +275,10 @@ button {
     margin-top: 96px;
   }
 
+  .desc {
+    width: 70%;
+  }
+
   .hero-image {
     margin-top: -230px;
     display: flex;
@@ -274,7 +287,13 @@ button {
     position: relative;
   }
 
-  .desc {
-    width: 70%;
+  .image {
+    width: 110%;
+    height: 100vh;
+  }
+
+  .play {
+    bottom: 150px;
+    left: -45px;
   }
 }
