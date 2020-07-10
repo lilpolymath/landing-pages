@@ -280,6 +280,7 @@ button {
   .hero-image {
     margin-top: -230px;
     display: flex;
+    margin-bottom: 0;
     flex: 0.4;
     z-index: 3;
     position: relative;

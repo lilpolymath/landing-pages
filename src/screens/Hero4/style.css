@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  font: 14px 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: #f7edde;
+  max-width: 1140px;
+  padding: 0px 12px;
+  margin: auto;
+  height: auto;
+}
+
+nav {
+  z-index: 10;
+  position: relative;
+}
+
+.pos {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+}
+
+.logo a {
+  font-size: 2em;
+  line-height: 25px;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+.nav {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-item a {
+  color: #222222;
+}
+
+a.active {
+  color: rgb(0, 0, 0);
+}
