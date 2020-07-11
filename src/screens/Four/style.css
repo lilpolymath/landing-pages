@@ -28,22 +28,17 @@ nav {
   height: 80px;
 }
 
-.header a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 1.25em;
-  color: black;
-}
-
 .logo {
   display: flex;
   flex: 0.6;
 }
+
 .logo a {
   font-size: 2em;
   line-height: 25px;
-  padding: 12px 0;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .nav {
@@ -71,6 +66,7 @@ ul {
 
 .nav-item a {
   color: #222222;
+  text-decoration: none;
 }
 
 a.active {
@@ -78,23 +74,13 @@ a.active {
 }
 
 .hamburger {
-  position: relative;
   text-align: center;
   display: flex;
   justify-content: flex-end;
 }
 
-input.hamburger-checkbox {
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-
 .hamburger-icon {
-  position: absolute;
   z-index: 6;
-  top: 0;
-  left: 0;
   padding: 12px 5px;
 }
 
@@ -113,41 +99,63 @@ span:nth-of-type(2) {
   float: right;
 }
 
-#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+.none span:nth-of-type(1) {
   transform: translate(0%, 425%) rotate(-45deg);
   background-color: black;
 }
 
-#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+.none span:nth-of-type(2) {
   transform: rotate(45deg);
   width: 40px;
   background-color: black;
 }
 
-#openmenu:checked ~ div.sidebar {
-  padding: 0;
-  transform: translateX(-12px);
+.no-menubar {
+  display: none;
+  width: 0px;
+  height: 0px;
+  transition: close 0.75s ease-in-out;
 }
 
-.sidebar {
-  background-color: #fff;
+.menubar {
+  background-color: #d9d3d3;
   position: absolute;
-  transform: translateX(-120vw);
   width: 100%;
   height: 100%;
-  top: 0;
-  transform-origin: (0, 0);
-  padding: 16px;
-  transition: 0.6s ease-in-out;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  animation: open 0.75s ease-in-out;
   z-index: 10;
 }
 
-.menu-links > li,
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.menu-links,
+li,
 a {
-  color: white;
+  color: #d9d3d3;
   transition: 0.5s ease-in-out;
-  font-size: 20px;
+  font-size: 18px;
   margin: 12px 0;
+  padding-right: 12px;
 }
 
 ul {
@@ -302,9 +310,6 @@ div.active {
   .desc {
     font-size: 18px;
     line-height: 26px;
-  }
-
-  .desc {
     width: 70%;
   }
 
@@ -326,7 +331,6 @@ div.active {
     display: flex;
     margin-bottom: 0;
     flex: 0.4;
-    height: 80vh;
   }
 
   .image {

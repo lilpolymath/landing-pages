@@ -6,7 +6,7 @@ import './App.css';
 // import HeroOne from './screens/Hero1';
 // import HeroTwo from './screens/Hero2';
 // import HeroThree from './screens/Hero3';
-import HeroFour from './screens/Hero4';
+import HeroFour from './screens/Four';
 
 function App() {
   return (

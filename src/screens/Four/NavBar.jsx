@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    console.log('state', open);
+    setOpen(!open);
+  };
+
   return (
     <div className='pos'>
       <nav className='header'>
@@ -20,19 +27,15 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className='hamburger'>
-            <input type='checkbox' class='hamburger-checkbox' id='openmenu' />
-
-            <div class='hamburger-icon'>
-              <label for='openmenu' id='hamburger-label'>
-                <span></span>
-                <span></span>
-              </label>
+          <div onClick={toggleMenu} className='hamburger'>
+            <div className={open ? 'hamburger-icon none' : 'hamburger-icon'}>
+              <span></span>
+              <span></span>
             </div>
           </div>
         </div>
       </nav>
-      <div className='sidebar'>
+      <div className={open ? 'menubar' : 'no-menubar'}>
         <ul className='menu-links'>
           <li className='nav-item'>
             <a className='active' href='#default'>
