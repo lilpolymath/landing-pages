@@ -7,6 +7,7 @@ import Twitter from '../../assets/icons/Twitter';
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
+  const [active, setActive] = useState(false);
 
   const images = [
     {
@@ -18,6 +19,21 @@ const Hero = () => {
       index: 2,
       src:
         'https://res.cloudinary.com/favourcodes/image/upload/v1594425842/Placeholder_2_fl0psx.png',
+    },
+    {
+      index: 3,
+      src:
+        'https://res.cloudinary.com/favourcodes/image/upload/v1594510804/joao-paulo-de-souza-oliveira-BBNPJnucqYQ-unsplash_d5ns7s.jpg',
+    },
+    {
+      index: 4,
+      src:
+        'https://res.cloudinary.com/favourcodes/image/upload/v1594510806/honey-yanibel-minaya-cruz-YrYdmIVSE8Y-unsplash_vxwda9.jpg',
+    },
+    {
+      index: 5,
+      src:
+        'https://res.cloudinary.com/favourcodes/image/upload/v1594510808/juli-kosolapova-h6e1QApgI38-unsplash_ggey3g.jpg',
     },
   ];
 
@@ -55,9 +71,15 @@ const Hero = () => {
 
       <div className='hero-image'>
         <figure>
-          <img className='image' alt='' src={images[index].src} />
+          <img
+            onMouseEnter={() => setActive(!active)}
+            onMouseLeave={() => setActive(!active)}
+            className='image'
+            alt=''
+            src={images[index].src}
+          />
         </figure>
-        <div className='next'>
+        <div className={active ? 'preview' : 'next'}>
           <img
             className='next-image'
             alt=''

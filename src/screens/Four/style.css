@@ -114,7 +114,7 @@ span:nth-of-type(2) {
   display: none;
   width: 0px;
   height: 0px;
-  transition: close 0.75s ease-in-out;
+  animation: close 0.75s ease-in-out;
 }
 
 .menubar {
@@ -344,6 +344,11 @@ div.active {
     right: -150px;
     width: 250px;
     height: 300px;
+    box-shadow: -3px -1px 15px 3px rgba(98, 98, 98, 1);
+  }
+
+  .preview {
+    display: none;
   }
 
   .next-image {
