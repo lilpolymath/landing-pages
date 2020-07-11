@@ -333,10 +333,6 @@ div.active {
     flex: 0.4;
   }
 
-  .image {
-    height: auto;
-  }
-
   .buttons {
     margin-top: 64px;
   }
