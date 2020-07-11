@@ -170,6 +170,7 @@ ul {
 
 .hero-text {
   margin-top: 36px;
+  order: 1;
 }
 
 .desc {
@@ -229,11 +230,44 @@ svg {
 
 .image {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+}
+
+.next {
+  display: none;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   order: 1;
+}
+
+.numbers {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  order: 0;
+}
+
+div.active {
+  color: white;
+  background-color: #f96241;
+}
+
+.numbers:hover {
+  color: white;
+  background-color: #f96241;
 }
 
 @media screen and (min-width: 769px) {
@@ -256,6 +290,12 @@ svg {
   .hero {
     display: flex;
     flex: 0.6;
+    order: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-text {
     order: 0;
   }
 
@@ -290,10 +330,25 @@ svg {
   }
 
   .image {
-    height: 100%;
+    height: auto;
   }
 
   .buttons {
     margin-top: 64px;
+  }
+
+  .next {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    width: 250px;
+    height: 300px;
+  }
+
+  .next-image {
+    width: 250px;
+    object-fit: cover;
+    height: auto;
   }
 }

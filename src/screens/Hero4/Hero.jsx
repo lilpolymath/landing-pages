@@ -5,7 +5,10 @@ import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
 
 const imageSrc =
-  'https://res.cloudinary.com/favourcodes/image/upload/v1594228052/Placeholder_1_ye5ru5.png';
+  'https://res.cloudinary.com/favourcodes/image/upload/v1594425842/Placeholder_2_fl0psx.png';
+
+const nextImage =
+  'https://res.cloudinary.com/favourcodes/image/upload/v1594493520/Placeholder_3_ythadq.png';
 
 const Hero = () => {
   return (
@@ -25,15 +28,19 @@ const Hero = () => {
             <LinkedIn />
             <Google />
           </div>
-          <div className='social'></div>
+        </div>
+        <div className='index'>
+          <div className='numbers active'>1</div>
+          <div className='numbers'>2</div>
+          <div className='numbers'>3</div>
         </div>
       </div>
       <div className='hero-image'>
         <figure>
           <img className='image' alt='' src={imageSrc} />
         </figure>
-        <div className='play'>
-          <div className='play-button'></div>
+        <div className='next'>
+          <img className='next-image' alt='' src={nextImage} />
         </div>
       </div>
     </main>
