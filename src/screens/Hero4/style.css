@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f7edde;
+  background-color: #d9d3d3;
   max-width: 1140px;
   padding: 0px 12px;
   margin: auto;
@@ -35,6 +35,10 @@ nav {
   color: black;
 }
 
+.logo {
+  display: flex;
+  flex: 0.6;
+}
 .logo a {
   font-size: 2em;
   line-height: 25px;
@@ -44,6 +48,21 @@ nav {
 
 .nav {
   display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em auto 2em;
+}
+
+.left-nav {
+  display: flex;
+  flex: 0.4;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ul {
@@ -56,4 +75,225 @@ ul {
 
 a.active {
   color: rgb(0, 0, 0);
+}
+
+.hamburger {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input.hamburger-checkbox {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  padding: 12px 5px;
+}
+
+.hamburger-icon span {
+  height: 3px;
+  width: 40px;
+  background-color: black;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.75s ease-in-out;
+  transform: none;
+}
+
+span:nth-of-type(2) {
+  width: 25px;
+  float: right;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  transform: translate(0%, 425%) rotate(-45deg);
+  background-color: black;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: rotate(45deg);
+  width: 40px;
+  background-color: black;
+}
+
+#openmenu:checked ~ div.sidebar {
+  padding: 0;
+  transform: translateX(-12px);
+}
+
+.sidebar {
+  background-color: #fff;
+  position: absolute;
+  transform: translateX(-120vw);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform-origin: (0, 0);
+  padding: 16px;
+  transition: 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.menu-links > li,
+a {
+  color: white;
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.label {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.main {
+  font-size: 54px;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.hero-text {
+  margin-top: 36px;
+}
+
+.desc {
+  font-size: 18px;
+  color: rgba(22, 22, 22, 0.8);
+  line-height: 28px;
+  margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.3;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button {
+  letter-spacing: 3px;
+  color: #4737ff;
+  background-color: white;
+  outline: none !important;
+  border: none;
+  font-size: 14px;
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 3px solid #4737ff;
+}
+
+.first {
+  background-color: #4737ff;
+  color: white;
+  border: none;
+  margin-right: 30px;
+}
+
+.first:hover {
+  color: #4737ff;
+  background-color: white;
+  border: 3px solid #4737ff;
+}
+
+svg {
+  fill: black;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.hero-image {
+  display: flex;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero {
+  order: 1;
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    margin-top: 36px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 64px;
+  }
+
+  main {
+    flex-direction: row;
+    margin: 80px auto 0;
+  }
+
+  .hero {
+    display: flex;
+    flex: 0.6;
+    order: 0;
+  }
+
+  .desc {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .desc {
+    width: 70%;
+  }
+
+  .main {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+  }
+
+  .label {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .hero-image {
+    margin-top: -50px;
+    display: flex;
+    margin-bottom: 0;
+    flex: 0.4;
+    height: 80vh;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .buttons {
+    margin-top: 64px;
+  }
 }

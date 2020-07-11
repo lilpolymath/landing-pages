@@ -7,24 +7,28 @@ const NavBar = () => {
         <div className='logo'>
           <a href='#default'>Gravity</a>
         </div>
-        <ul className='nav'>
-          <li className='nav-item'>
-            <a className='active' href='#default'>
-              Home
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a href='#default'>Contact</a>
-          </li>
-        </ul>
-        <div className='hamburger'>
-          <input type='checkbox' class='hamburger-checkbox' id='openmenu' />
+        <div className='left-nav'>
+          <div className='nav-list'>
+            <ul className='nav'>
+              <li className='nav-item'>
+                <a className='active' href='#default'>
+                  Home
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a href='#default'>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className='hamburger'>
+            <input type='checkbox' class='hamburger-checkbox' id='openmenu' />
 
-          <div class='hamburger-icon'>
-            <label for='openmenu' id='hamburger-label'>
-              <span></span>
-              <span></span>
-            </label>
+            <div class='hamburger-icon'>
+              <label for='openmenu' id='hamburger-label'>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
           </div>
         </div>
       </nav>
