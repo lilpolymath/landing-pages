@@ -3,9 +3,9 @@ import React from 'react';
 
 import './App.css';
 
-// import HeroOne from './screens/Hero1';
-// import HeroTwo from './screens/Hero2';
-// import HeroThree from './screens/Hero3';
+// import HeroOne from './screens/One';
+// import HeroTwo from './screens/Two';
+// import HeroThree from './screens/Three';
 import HeroFour from './screens/Four';
 
 function App() {
