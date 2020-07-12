@@ -103,6 +103,7 @@ const Hero = () => {
             />
           ))}
         </figure>
+
         <div className={active ? 'preview' : 'next'}>
           <img
             className='next-image'
