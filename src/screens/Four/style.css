@@ -49,7 +49,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1em auto 2em;
+  margin: 2em auto;
 }
 
 .left-nav {

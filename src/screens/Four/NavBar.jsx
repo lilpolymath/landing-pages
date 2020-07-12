@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 
+import useWindowDimensions from './use-window-dimension';
+
 const NavBar = () => {
   const [open, setOpen] = useState(false);
 
+  const { width } = useWindowDimensions();
+
   const toggleMenu = () => {
     console.log('state', open);
-    setOpen(!open);
+    if (width < 769) {
+      setOpen(!open);
+    }
   };
 
   return (
