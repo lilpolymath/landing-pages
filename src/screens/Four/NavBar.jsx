@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import useWindowDimensions from './use-window-dimension';
+import useWindowDimensions from '../../hooks/use-window-dimension';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
