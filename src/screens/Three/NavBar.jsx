@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { animated, useSpring, config } from 'react-spring';
+
+import useWindowDimensions from '../../hooks/use-window-dimension';
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const { width } = useWindowDimensions();
+
+  const toggleMenu = () => {
+    if (width < 769) {
+      setOpen(!open);
+    }
+  };
+
+  const props = useSpring({
+    opacity: open ? 1 : 0,
+    config: config.molasses,
+  });
+
   return (
     <div className='pos'>
       <nav className='header'>
@@ -17,18 +34,14 @@ const NavBar = () => {
             <a href='#default'>Contact</a>
           </li>
         </ul>
-        <div className='hamburger'>
-          <input type='checkbox' class='hamburger-checkbox' id='openmenu' />
-
-          <div class='hamburger-icon'>
-            <label for='openmenu' id='hamburger-label'>
-              <span></span>
-              <span></span>
-            </label>
+        <div onClick={toggleMenu} className='hamburger'>
+          <div className={open ? 'hamburger-icon none' : 'hamburger-icon'}>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </nav>
-      <div className='sidebar'>
+      <animated.div style={props} className={open ? 'menubar' : 'no-menubar'}>
         <ul className='menu-links'>
           <li className='nav-item'>
             <a className='active' href='#default'>
@@ -39,7 +52,7 @@ const NavBar = () => {
             <a href='#default'>Contact</a>
           </li>
         </ul>
-      </div>
+      </animated.div>
     </div>
   );
 };
