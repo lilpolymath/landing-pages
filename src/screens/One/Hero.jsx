@@ -11,7 +11,7 @@ const Hero = () => {
           <p className='label'>Shooting Stars</p>
           <h3 className='main'>The Amazing Hubble</h3>
           <p className='desc'>
-            In efforrs to expand our horizons, we welcome every
+            In efforts to expand our horizons, we welcome every
             investment-minded individuals to join us in Contodel Investment
             Company
           </p>

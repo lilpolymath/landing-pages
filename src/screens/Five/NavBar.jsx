@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { animated, useSpring, config } from 'react-spring';
 
 import useWindowDimensions from '../../hooks/use-window-dimension';
 
@@ -8,11 +9,15 @@ const NavBar = () => {
   const { width } = useWindowDimensions();
 
   const toggleMenu = () => {
-    console.log('state', open);
     if (width < 769) {
       setOpen(!open);
     }
   };
+
+  const props = useSpring({
+    opacity: open ? 1 : 0,
+    config: config.molasses,
+  });
 
   return (
     <div className='pos'>
@@ -38,7 +43,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div className={open ? 'menubar' : 'no-menubar'}>
+      <animated.div style={props} className={open ? 'menubar' : 'no-menubar'}>
         <ul className='menu-links'>
           <li className='nav-item'>
             <a className='active' href='#default'>
@@ -49,7 +54,7 @@ const NavBar = () => {
             <a href='#default'>Contact</a>
           </li>
         </ul>
-      </div>
+      </animated.div>
     </div>
   );
 };

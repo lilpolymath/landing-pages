@@ -7,9 +7,18 @@ body {
   background-color: #4737ff;
   color: white;
   max-width: 1140px;
-  padding: 0px 16px;
+  padding: 0px 12px;
   margin: auto;
   height: auto;
+}
+
+/* NAVBAR */
+nav {
+  z-index: 10;
+}
+
+.pos {
+  position: relative;
 }
 
 .header {
@@ -20,61 +29,135 @@ body {
   height: 80px;
 }
 
-.header a {
-  padding: 12px;
-  text-decoration: none;
-  font-size: 1.25em;
+.logo {
+  display: flex;
 }
 
 .logo a {
   font-size: 2em;
   line-height: 25px;
-  padding: 12px 0;
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.nav {
+.left-nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
 ul {
+  padding: 0;
   list-style-type: none;
 }
 
-.nav-item a {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-a.active {
-  color: rgb(255, 255, 255);
-}
-
-.hamburger {
+.nav {
   display: none;
 }
 
+.nav-item a {
+  color: #ffffffd1;
+  text-decoration: none;
+}
+
+a.active {
+  color: #ffffff;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger-icon {
+  z-index: 6;
+  padding: 12px 5px;
+}
+
+.hamburger-icon span {
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.75s ease-in-out;
+  transform: none;
+}
+
+span:nth-of-type(2) {
+  width: 25px;
+  float: right;
+}
+
+.none span:nth-of-type(1) {
+  transform: translate(0%, 425%) rotate(-45deg);
+  background-color: white;
+}
+
+.none span:nth-of-type(2) {
+  transform: rotate(45deg);
+  width: 40px;
+  background-color: white;
+}
+
+/* END OF HAMBURGER */
+
+/* MENUBAR */
+
+.no-menubar {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.menubar {
+  background-color: #4737ff;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  padding: 12px;
+  z-index: 10;
+}
+
+.menu-links,
+li,
+a {
+  color: #4737ff;
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  margin: 12px 0;
+  padding-right: 12px;
+}
+
+/* END OF MENUBAR */
+
+/* END OF THE NAVBAR */
+
+/* HERO */
+
 .hero {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 7em;
-  align-items: center;
-  width: 100%;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin: 2em auto;
 }
 
 .left {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  margin-right: 80px;
+  margin-top: 36px;
 }
 
 .right {
   display: flex;
-  flex: 1;
   position: relative;
 }
 
@@ -86,15 +169,15 @@ a.active {
 }
 
 .main {
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: -1px;
+  font-size: 54px;
+  text-transform: capitalize;
+  line-height: 64px;
 }
 
 .desc {
-  margin: 2.5em 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
+  margin: 30px 0;
 }
 
 button {
@@ -114,11 +197,6 @@ button {
 .buttons {
   display: flex;
   margin: 32px 0;
-}
-
-li > a:hover {
-  color: #4737ff;
-  background-color: white;
 }
 
 .first:hover {
@@ -141,6 +219,15 @@ li > a:hover {
 p {
   font-size: 18px;
   line-height: 28px;
+}
+
+figure {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }
 
 .play-button {
@@ -171,72 +258,45 @@ svg {
 }
 
 footer {
-  margin: 2em 0 0;
+  margin: 2em 0;
 }
 
-@media screen and (max-width: 800px) {
-  .hero {
-    flex-direction: column-reverse;
-  }
-
-  .left {
-    margin: 24px 0px;
-    width: 100%;
-  }
-
-  .image {
-    width: 100%;
-  }
-
-  .hero {
-    margin-top: 4em;
-  }
-
-  body {
-    padding: 0px 32px;
-  }
-
-  footer {
-    margin: 0 0 1em;
-  }
-
-  .header a {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .image {
-    width: 100%;
+@media screen and (min-width: 769px) {
+  nav {
+    margin-top: 36px;
   }
 
   .nav {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .hamburger {
-    display: inline;
+    display: none;
   }
 
-  svg {
-    margin: 0;
+  .left {
+    flex: 0.4;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .image {
-    width: 100%;
+  .right {
+    flex: 0.5;
+  }
+
+  .hero {
+    flex-direction: row;
+    margin-top: 80px;
   }
 
   .desc {
-    margin: 1em 0;
     font-size: 18px;
     line-height: 26px;
   }
 
   .main {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 60px;
+    line-height: 70px;
     letter-spacing: -1px;
   }
 
@@ -252,15 +312,8 @@ footer {
     margin: 1.25em 0;
   }
 
-  button {
-    font-size: 12px;
-    height: 50px;
-    width: 140px;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .image {
+    width: 100%;
+    height: auto;
   }
 }

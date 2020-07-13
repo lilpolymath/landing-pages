@@ -114,7 +114,6 @@ span:nth-of-type(2) {
   display: none;
   width: 0px;
   height: 0px;
-  animation: close 0.75s ease-in-out;
 }
 
 .menubar {
@@ -126,28 +125,7 @@ span:nth-of-type(2) {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 12px;
-  animation: open 0.75s ease-in-out;
   z-index: 10;
-}
-
-/* MENUBAR ANIMATIONS */
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes close {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .menu-links,
@@ -168,9 +146,14 @@ a {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   margin: 2em auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
@@ -266,12 +249,6 @@ figure {
   display: none;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  order: 1;
-}
-
 .numbers {
   width: 50px;
   height: 50px;
@@ -320,7 +297,6 @@ div.active {
   .hero {
     display: flex;
     flex: 0.6;
-    order: 0;
     flex-direction: column;
     justify-content: space-between;
   }
