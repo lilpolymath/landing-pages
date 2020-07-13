@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  font: 14px 'Fira Sans', sans-serif;
+}
+
+body {
+  background-color: #f96241;
+  max-width: 1140px;
+  padding: 0px 12px;
+  color: white;
+  margin: auto;
+  height: auto;
+}
+
+/* NAVBAR */
+nav {
+  z-index: 10;
+}
+
+.pos {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  flex: 0.4;
+}
+
+.logo a {
+  font-size: 2em;
+  line-height: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.left-nav {
+  display: flex;
+  flex: 0.6;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger-icon {
+  z-index: 6;
+  padding: 12px 5px;
+}
+
+.hamburger-icon span {
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.75s ease-in-out;
+  transform: none;
+}
+
+span:nth-of-type(2) {
+  width: 25px;
+  float: right;
+}
+
+.none span:nth-of-type(1) {
+  transform: translate(0%, 425%) rotate(-45deg);
+  background-color: white;
+}
+
+.none span:nth-of-type(2) {
+  transform: rotate(45deg);
+  width: 40px;
+  background-color: white;
+}
+
+/* END OF HAMBURGER */
+
+/* MENUBAR */
+
+.no-menubar {
+  display: none;
+  width: 0px;
+  height: 0px;
+  animation: close 0.75s ease-in-out;
+}
+
+.menubar {
+  background-color: #f96241;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  animation: open 0.75s ease-in-out;
+  z-index: 10;
+}
+
+/* MENUBAR ANIMATIONS */
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.menu-links,
+li,
+a {
+  color: #ffffffd1;
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  margin: 12px 0;
+  padding-right: 12px;
+}
+
+/* END OF MENUBAR */
+
+/* END OF THE NAVBAR */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em auto 2em;
+}
+
+.hero {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+svg {
+  fill: white;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+}
+
+.social svg {
+  fill: white;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+}
+
+.social svg:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main {
+  font-size: 54px;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.hero-text {
+  margin-top: 36px;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-image {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid black;
+  margin-top: 20px;
+  margin-left: 27.5px;
+}
+
+.play {
+  position: absolute;
+  bottom: 3px;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  text-align: center;
+}
+
+.hero {
+  order: 1;
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    margin-top: 36px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    flex-direction: row;
+    margin: 96px auto 0;
+  }
+
+  .hero {
+    flex: 0.35;
+    order: 0;
+    justify-content: space-around;
+  }
+
+  .desc {
+    width: 70%;
+  }
+
+  .hero-image {
+    display: flex;
+    margin-bottom: 0;
+    flex: 0.6;
+    z-index: 3;
+    margin-top: -54px;
+    position: relative;
+  }
+
+  .image {
+    width: 110%;
+    height: auto;
+  }
+
+  .play {
+    bottom: 150px;
+    left: -35px;
+  }
+}
