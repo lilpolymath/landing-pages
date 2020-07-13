@@ -6,7 +6,7 @@ import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
 
 const Hero = () => {
-  const [[index, next], setIndex] = useState([0, 1]);
+  const [[index, next, dir], setIndex] = useState([0, 1, 0]);
   const [active, setActive] = useState(false);
 
   const images = [
@@ -35,14 +35,19 @@ const Hero = () => {
   ];
 
   const onClick = useCallback(
-    item => setIndex([item.index - 1, item.index % images.length]),
+    item =>
+      setIndex(prevState => [
+        item.index - 1,
+        item.index % images.length,
+        item.index > prevState[0] ? 1 : -1,
+      ]),
     [images.length]
   );
 
   const imageTransitions = useTransition(images[index], item => item.index, {
     from: {
       opacity: 0,
-      transform: 'translateX(150px)',
+      transform: `translateX(${dir === 1 ? 100 : -100}px)`,
     },
     enter: {
       opacity: 1,
@@ -50,7 +55,7 @@ const Hero = () => {
     },
     leave: {
       opacity: 0,
-      transform: 'translateX(-100px)',
+      transform: `translateX(${dir === 1 ? -100 : 100}px)`,
     },
     config: config.molasses,
   });
@@ -89,13 +94,14 @@ const Hero = () => {
       </div>
 
       <div className='hero-image'>
-        <figure>
+        <figure
+          onMouseEnter={() => setActive(!active)}
+          onMouseLeave={() => setActive(!active)}
+        >
           {imageTransitions.map(({ item, props, key }) => (
             <animated.div
               className='image'
               key={key}
-              onMouseEnter={() => setActive(!active)}
-              onMouseLeave={() => setActive(!active)}
               style={{
                 ...props,
                 backgroundImage: `url(https://res.cloudinary.com/favourcodes/image/upload/${item.src})`,

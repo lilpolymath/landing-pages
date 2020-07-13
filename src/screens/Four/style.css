@@ -11,6 +11,7 @@ body {
   height: auto;
 }
 
+/* NAVBAR */
 nav {
   z-index: 10;
 }
@@ -40,17 +41,6 @@ nav {
   color: black;
 }
 
-.nav {
-  display: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 2em auto;
-}
-
 .left-nav {
   display: flex;
   flex: 0.4;
@@ -60,7 +50,12 @@ main {
 }
 
 ul {
+  padding: 0;
   list-style-type: none;
+}
+
+.nav {
+  display: none;
 }
 
 .nav-item a {
@@ -71,6 +66,8 @@ ul {
 a.active {
   color: rgb(0, 0, 0);
 }
+
+/* HAMBURGER */
 
 .hamburger {
   text-align: center;
@@ -109,6 +106,10 @@ span:nth-of-type(2) {
   background-color: black;
 }
 
+/* END OF HAMBURGER */
+
+/* MENUBAR */
+
 .no-menubar {
   display: none;
   width: 0px;
@@ -128,6 +129,8 @@ span:nth-of-type(2) {
   animation: open 0.75s ease-in-out;
   z-index: 10;
 }
+
+/* MENUBAR ANIMATIONS */
 
 @keyframes open {
   0% {
@@ -157,8 +160,17 @@ a {
   padding-right: 12px;
 }
 
-ul {
-  padding: 0;
+/* END OF MENUBAR */
+
+/* END OF THE NAVBAR */
+
+/* HERO */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em auto;
 }
 
 .label {
