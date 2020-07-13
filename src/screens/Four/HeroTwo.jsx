@@ -1,13 +1,16 @@
 import React, { useState, useCallback } from 'react';
-import { animated, useTransition, config } from 'react-spring';
+import { animated, useTransition, useSpring, config } from 'react-spring';
 
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
+import useWindowDimensions from '../../hooks/use-window-dimension';
 
 const Hero = () => {
   const [[index, next, dir], setIndex] = useState([0, 1, 0]);
   const [active, setActive] = useState(false);
+  const [consent, setConsent] = useState(false);
+  const { width } = useWindowDimensions();
 
   const images = [
     {
@@ -33,6 +36,14 @@ const Hero = () => {
       src: 'v1594510808/juli-kosolapova-h6e1QApgI38-unsplash_ggey3g.jpg',
     },
   ];
+
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 20,
+    (x - window.innerWidth / 2) / 20,
+    1.1,
+  ];
+  const trans = (x, y, s) =>
+    `perspective(900px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
   const onClick = useCallback(
     item =>
@@ -60,6 +71,11 @@ const Hero = () => {
     config: config.molasses,
   });
 
+  const [springProps, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
+
   return (
     <main>
       <div className='hero'>
@@ -72,7 +88,13 @@ const Hero = () => {
             state.
           </p>
           <div className='buttons'>
-            <button className='first'>Get Started</button>
+            <button
+              style={{ width: `${width < 800 ? 150 : 250}px` }}
+              onClick={() => (width < 800 ? null : setConsent(!consent))}
+              className='first'
+            >
+              {width < 800 ? 'Contact Us' : 'Activate Easter Egg'}
+            </button>
             <Twitter />
             <LinkedIn />
             <Google />
@@ -102,9 +124,16 @@ const Hero = () => {
             <animated.div
               className='image'
               key={key}
+              onMouseMove={({ clientX: x, clientY: y }) => {
+                set({ xys: calc(x, y) });
+              }}
+              onMouseLeave={() => set({ xys: [0, 0, 1] })}
               style={{
                 ...props,
                 backgroundImage: `url(https://res.cloudinary.com/favourcodes/image/upload/${item.src})`,
+                transform: consent
+                  ? springProps.xys.interpolate(trans)
+                  : 'none',
               }}
             />
           ))}
