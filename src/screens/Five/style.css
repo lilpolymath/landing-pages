@@ -117,7 +117,6 @@ span:nth-of-type(2) {
   display: none;
   width: 0px;
   height: 0px;
-  animation: close 0.75s ease-in-out;
 }
 
 .menubar {
@@ -129,28 +128,8 @@ span:nth-of-type(2) {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 12px;
-  animation: open 0.75s ease-in-out;
   z-index: 10;
-}
-
-/* MENUBAR ANIMATIONS */
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes close {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  will-change: opacity;
 }
 
 .menu-links,
