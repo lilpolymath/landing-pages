@@ -10,6 +10,8 @@ body {
   padding: 0px 12px;
   margin: auto;
   height: auto;
+  background-repeat: no-repeat;
+  background-image: url('./G.svg');
 }
 
 /* NAVBAR */

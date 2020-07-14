@@ -9,6 +9,10 @@ body {
   padding: 0px 12px;
   margin: auto;
   height: auto;
+  background-repeat: no-repeat;
+  background-image: none;
+  background-position-x: 45%;
+  background-size: contain;
 }
 
 /* NAVBAR */
@@ -272,6 +276,10 @@ div.active {
 }
 
 @media screen and (min-width: 769px) {
+  body {
+    background-image: url('./Double.svg');
+  }
+
   nav {
     margin-top: 36px;
   }

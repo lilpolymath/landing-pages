@@ -4,12 +4,15 @@
 }
 
 body {
-  background-color: #f96241;
+  background-color: #f96341;
   max-width: 1140px;
   padding: 0px 12px;
   color: white;
   margin: auto;
   height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./A.svg');
 }
 
 /* NAVBAR */

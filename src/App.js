@@ -5,8 +5,8 @@ import './App.css';
 
 // import HeroOne from './screens/One';
 // import HeroTwo from './screens/Two';
-import HeroThree from './screens/Three';
-// import HeroFour from './screens/Four';
+// import HeroThree from './screens/Three';
+import HeroFour from './screens/Four';
 // import HeroFive from './screens/Five';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
     <div>
       {/* <HeroOne /> */}
       {/* <HeroTwo /> */}
-      <HeroThree />
-      {/* <HeroFour /> */}
+      {/* <HeroThree /> */}
+      <HeroFour />
       {/* <HeroFive /> */}
     </div>
     // <Router>
