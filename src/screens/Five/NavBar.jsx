@@ -16,7 +16,8 @@ const NavBar = () => {
 
   const props = useSpring({
     opacity: open ? 1 : 0,
-    config: config.molasses,
+    height: open ? '100%' : '0%',
+    config: { ...config.molasses, duration: 800 },
   });
 
   return (
@@ -43,7 +44,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <animated.div style={props} className={open ? 'menubar' : 'no-menubar'}>
+      <animated.div style={props} className='menubar'>
         <ul className='menu-links'>
           <li className='nav-item'>
             <a className='active' href='#default'>

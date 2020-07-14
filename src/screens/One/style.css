@@ -109,12 +109,6 @@ span:nth-of-type(2) {
 
 /* MENUBAR */
 
-.no-menubar {
-  display: none;
-  width: 0px;
-  height: 0px;
-}
-
 .menubar {
   background-color: #4737ff;
   position: absolute;
@@ -127,7 +121,6 @@ span:nth-of-type(2) {
   z-index: 10;
 }
 
-.menu-links,
 li,
 a {
   color: #4737ff;

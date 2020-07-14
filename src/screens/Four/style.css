@@ -110,12 +110,6 @@ span:nth-of-type(2) {
 
 /* MENUBAR */
 
-.no-menubar {
-  display: none;
-  width: 0px;
-  height: 0px;
-}
-
 .menubar {
   background-color: #d9d3d3;
   position: absolute;
