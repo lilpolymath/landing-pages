@@ -40,10 +40,6 @@ nav {
   color: black;
 }
 
-.nav {
-  display: none;
-}
-
 input[name='search'] {
   width: 96%;
   height: 40px;
@@ -220,6 +216,7 @@ figure {
   will-change: transform, opacity;
 }
 
+/* SLIDER */
 .slider {
   display: flex;
   justify-content: center;
@@ -257,6 +254,8 @@ div.active {
   background-color: #e6ca9b;
 }
 
+/* END OF SLIDER */
+
 .play-button {
   width: 0;
   height: 0;
@@ -283,13 +282,6 @@ div.active {
 @media screen and (min-width: 769px) {
   nav {
     margin-top: 36px;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 64px;
   }
 
   .search {
