@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
-import styles from "./style.module.css";
-
+import Button from '../../common/Button';
+import styles from './style.module.css';
 
 const Hero = () => {
   const [[index, dir], setIndex] = useState([0, 0]);
@@ -48,17 +48,17 @@ const Hero = () => {
   });
 
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.hero_text}>
-          <h2 className={styles.main}>Click and control your business</h2>
+          <h2 className={styles.main_text}>Click and control your business</h2>
           <p className={styles.desc}>
             From ads that dance or sing to MTV-like commercials, online
             advertisers are now using a new type of technology "rich media" to
             attract consumers.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.first}>Buy now</button>
+            <Button label='Buy now' />
           </div>
         </div>
         <div className={styles.index}>
@@ -69,7 +69,9 @@ const Hero = () => {
                 key={item.index}
                 onClick={() => onClick(item)}
                 className={
-                  index === item.index - 1 ? styles.numbers_active : styles.numbers
+                  index === item.index - 1
+                    ? styles.numbers_active
+                    : styles.numbers
                 }
               />
             ))}
@@ -79,7 +81,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.hero_image}>
-        <figure>
+        <figure className={styles.figure}>
           <div
             className={styles.image}
             style={{

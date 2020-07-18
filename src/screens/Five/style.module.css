@@ -1,15 +1,6 @@
-* {
-  margin: 0;
-  font: 14px 'Fira Sans', sans-serif;
-}
-
-body {
+.body {
   background-color: #f96341;
-  max-width: 1140px;
-  padding: 0px 12px;
   color: white;
-  margin: auto;
-  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('./A.svg');
@@ -38,7 +29,7 @@ nav {
 }
 
 .logo a {
-  font-size: 2em;
+  font-size: 18px;
   line-height: 25px;
   font-weight: bold;
   text-decoration: none;
@@ -51,11 +42,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .nav {
@@ -148,11 +134,11 @@ a {
 /* END OF MENUBAR */
 
 /* END OF THE NAVBAR */
-main {
+.main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  margin: 1em auto 2em;
+  margin: 1rem auto 2rem;
 }
 
 .hero {
@@ -179,11 +165,12 @@ svg {
   margin-right: 8px;
 }
 
-.main {
+.main_text {
   font-size: 54px;
   text-transform: capitalize;
   font-weight: bold;
   line-height: 64px;
+  color: white;
 }
 
 .hero_text {
@@ -233,29 +220,20 @@ svg {
   text-align: center;
 }
 
-.hero {
-  order: 1;
-}
-
 @media screen and (min-width: 769px) {
-  nav {
-    margin-top: 36px;
-  }
-
   .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  main {
+  .main {
     flex-direction: row;
     margin: 96px auto 0;
   }
 
   .hero {
     flex: 0.35;
-    order: 0;
     justify-content: space-around;
   }
 

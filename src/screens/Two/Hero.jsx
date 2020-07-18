@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../../common/Button';
 import styles from './style.module.css';
 
 const imageSrc =
@@ -7,9 +8,9 @@ const imageSrc =
 
 const Hero = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.hero}>
-        <div className={styles.main}>
+        <div className={styles.text}>
           <h2>Branding do you know who you are</h2>
           <p className={styles.desc}>
             The following tips on creating a direct mail advertising campaign
@@ -18,8 +19,8 @@ const Hero = () => {
           </p>
         </div>
         <div className={styles.buttons}>
-          <button className={styles.first}>Design your module</button>
-          <button className={styles.second}>Get Demo version</button>
+          <Button width="250px" label='Design your module' />
+          <Button type="second" width="250px" label='Get Demo version' />
           <a className={styles.external} href='/'>
             Learn More
           </a>

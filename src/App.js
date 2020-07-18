@@ -5,10 +5,10 @@ import './App.css';
 
 import HeroOne from './screens/One';
 import HeroTwo from './screens/Two';
-// import HeroThree from './screens/Three';
-// import HeroFour from './screens/Four';
-// import HeroFive from './screens/Five';
-// import HeroSeven from './screens/Seven';
+import HeroThree from './screens/Three';
+import HeroFour from './screens/Four';
+import HeroFive from './screens/Five';
+import HeroSeven from './screens/Seven';
 
 function App() {
   return (
@@ -21,10 +21,22 @@ function App() {
             render={() => (
               <ul>
                 <li>
-                  <Link to='/one'>One</Link>
+                  <Link style={{ color: 'black' }} to='/one'>One</Link>
                 </li>
                 <li>
-                  <Link to='/two'>Two</Link>
+                  <Link style={{ color: 'black' }} to='/two'>Two</Link>
+                </li>
+                <li>
+                  <Link style={{ color: 'black' }} to='/three'>Three</Link>
+                </li>
+                <li>
+                  <Link style={{ color: 'black' }} to='/four'>Four</Link>
+                </li>
+                <li>
+                  <Link style={{ color: 'black' }} to='/five'>Five</Link>
+                </li>
+                <li>
+                  <Link style={{ color: 'black' }} to='/seven'>Seven</Link>
                 </li>
               </ul>
             )}
@@ -34,6 +46,18 @@ function App() {
           </Route>
           <Route path='/two'>
             <HeroTwo />
+          </Route>
+          <Route path='/three'>
+            <HeroThree />
+          </Route>
+          <Route path='/four'>
+            <HeroFour />
+          </Route>
+          <Route path='/five'>
+            <HeroFive />
+          </Route>
+          <Route path='/seven'>
+            <HeroSeven />
           </Route>
         </Switch>
       </div>

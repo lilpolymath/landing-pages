@@ -1,24 +1,12 @@
-* {
-  margin: 0;
-  font: 14px 'Fira Sans', sans-serif;
-}
-
-body {
+.body {
   background-color: #d9d3d3;
-  max-width: 1140px;
-  padding: 0px 12px;
-  margin: auto;
-  height: auto;
   background-repeat: no-repeat;
-  background-image: none;
   background-position-x: 45%;
   background-size: contain;
+  color: black;
 }
 
 /* NAVBAR */
-nav {
-  z-index: 10;
-}
 
 .pos {
   position: relative;
@@ -38,7 +26,7 @@ nav {
 }
 
 .logo a {
-  font-size: 2em;
+  font-size: 3rem;
   line-height: 25px;
   font-weight: bold;
   text-decoration: none;
@@ -51,11 +39,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .nav {
@@ -142,11 +125,11 @@ a {
 
 /* HERO */
 
-main {
+.main {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 .hero {
@@ -161,7 +144,7 @@ main {
   margin-bottom: 30px;
 }
 
-.main {
+.main_text {
   font-size: 54px;
   text-transform: capitalize;
   font-weight: bold;
@@ -170,7 +153,6 @@ main {
 
 .hero_text {
   margin-top: 36px;
-  order: 1;
 }
 
 .desc {
@@ -188,33 +170,6 @@ main {
   margin-top: 30px;
 }
 
-button {
-  letter-spacing: 3px;
-  color: #4737ff;
-  background-color: white;
-  outline: none !important;
-  border: none;
-  font-size: 14px;
-  height: 50px;
-  width: 150px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 3px solid #4737ff;
-}
-
-.first {
-  background-color: #4737ff;
-  color: white;
-  border: none;
-  margin-right: 30px;
-}
-
-.first:hover {
-  color: #4737ff;
-  background-color: white;
-  border: 3px solid #4737ff;
-}
-
 svg {
   fill: black;
   height: 24px;
@@ -229,7 +184,7 @@ svg {
   overflow-x: hidden;
 }
 
-figure {
+.figure {
   width: 100%;
   height: 80vh;
 }
@@ -276,12 +231,8 @@ div.active {
 }
 
 @media screen and (min-width: 769px) {
-  body {
+  .body {
     background-image: url('./Double.svg');
-  }
-
-  nav {
-    margin-top: 36px;
   }
 
   .nav {
@@ -291,7 +242,7 @@ div.active {
     margin-right: 64px;
   }
 
-  main {
+  .main {
     flex-direction: row;
     margin: 80px auto 0;
   }
@@ -303,17 +254,13 @@ div.active {
     justify-content: space-between;
   }
 
-  .hero_text {
-    order: 0;
-  }
-
   .desc {
     font-size: 18px;
     line-height: 26px;
     width: 70%;
   }
 
-  .main {
+  .main_text {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -1px;

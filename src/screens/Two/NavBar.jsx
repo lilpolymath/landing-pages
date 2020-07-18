@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuIcon from '../../assets/icons/MenuIcon';
+import Hamburger from '../../common/Hamburger'
 
 import styles from "./style.module.css";
 
@@ -10,9 +11,7 @@ const NavBar = () => {
         Gravity
       </a>
       <nav>
-        <a className={styles.hamburger} href='#default'>
-          <MenuIcon />
-        </a>
+       <Hamburger />
       </nav>
     </header>
   );
