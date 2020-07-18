@@ -8,7 +8,7 @@ import Container from '../../common/Container';
 export class HeroTwo extends Component {
   render() {
     return (
-      <Container color="black" bgColor="#f4f4f4">
+      <Container>
         <NavBar />
         <Hero />
       </Container>

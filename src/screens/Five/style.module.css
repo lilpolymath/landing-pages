@@ -170,6 +170,7 @@ svg {
   text-transform: capitalize;
   font-weight: bold;
   line-height: 64px;
+  color: white;
 }
 
 .hero_text {

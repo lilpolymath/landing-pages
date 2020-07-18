@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../../common/Button';
 import styles from './style.module.css';
 
 const imageSrc =
@@ -18,7 +19,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={styles.buttons}>
-          <button className={styles.first}>Design your module</button>
+          <Button label='Design your module' />
           <button className={styles.second}>Get Demo version</button>
           <a className={styles.external} href='/'>
             Learn More
