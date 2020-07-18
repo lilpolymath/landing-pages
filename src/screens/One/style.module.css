@@ -1,18 +1,4 @@
-* {
-  margin: 0;
-  font: 14px 'Fira Sans', sans-serif;
-}
 
-body {
-  background-color: #4737ff;
-  color: white;
-  max-width: 1140px;
-  padding: 0px 12px;
-  margin: auto;
-  height: auto;
-  background-repeat: no-repeat;
-  background-image: url('./G.svg');
-}
 
 /* NAVBAR */
 nav {
@@ -257,9 +243,6 @@ footer {
 }
 
 @media screen and (min-width: 769px) {
-  nav {
-    margin-top: 36px;
-  }
 
   .nav {
     display: flex;

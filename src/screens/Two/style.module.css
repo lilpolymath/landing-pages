@@ -3,15 +3,6 @@
   font: 14px 'Fira Sans', sans-serif;
 }
 
-body {
-  background-color: #f4f4f4;
-  color: black;
-  max-width: 1140px;
-  padding: 0px 16px;
-  margin: auto;
-  height: auto;
-}
-
 header {
   display: flex;
   flex-direction: row;
