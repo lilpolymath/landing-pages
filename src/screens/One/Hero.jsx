@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <figure>
+          <figure className={styles.figure}>
             <img src={imageSrc} className={styles.image} alt='hollywood' />
           </figure>
           <div className={styles.play}>

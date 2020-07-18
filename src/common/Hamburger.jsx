@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './hamburger.style.module.css';
+import styles from './hamburger.module.css';
 
-const Hamburger = ({ toggleMenu, open }) => {
+const Hamburger = ({ toggleMenu, open = false, dark }) => {
   const none = styles.hamburger_icon + ' ' + styles.none;
 
   console.log(open);

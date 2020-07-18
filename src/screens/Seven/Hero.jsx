@@ -80,7 +80,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.hero_image}>
-        <figure>
+        <figure className={styles.figure}>
           <div
             className={styles.image}
             style={{
