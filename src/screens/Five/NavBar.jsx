@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
 import useWindowDimensions from '../../hooks/use-window-dimension';
+import styles from './style.module.css'
+
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
   const { width } = useWindowDimensions();
+
+  const none = styles.hamburger_icon + ' ' + styles.none
 
   const toggleMenu = () => {
     if (width < 769) {
@@ -21,37 +24,37 @@ const NavBar = () => {
   });
 
   return (
-    <div className='pos'>
-      <nav className='header'>
-        <div className='logo'>
+    <div className={styles.pos}>
+      <nav className={styles.header}>
+        <div className={styles.logo}>
           <a href='#default'>Gravity</a>
         </div>
-        <div className='left-nav'>
-          <div className='nav-list'>
-            <ul className='nav'>
-              <li className='nav-item'>
+        <div className={styles.left_nav}>
+          <div className={styles.nav_list}>
+            <ul className={styles.nav}>
+              <li className={styles.nav_item}>
                 <p className='arrow'>
                   <a href='#default'>Go to the projects </a> &#8594;
                 </p>
               </li>
             </ul>
           </div>
-          <div onClick={toggleMenu} className='hamburger'>
-            <div className={open ? 'hamburger-icon none' : 'hamburger-icon'}>
+          <div onClick={toggleMenu} className={styles.hamburger}>
+            <div className={open ? none : styles.hamburger_icon}>
               <span></span>
               <span></span>
             </div>
           </div>
         </div>
       </nav>
-      <animated.div style={props} className='menubar'>
-        <ul className='menu-links'>
-          <li className='nav-item'>
-            <a className='active' href='#default'>
+      <animated.div style={props} className={styles.menubar}>
+        <ul className={styles.menu_links}>
+          <li className={styles.nav_item}>
+            <a className={styles.active} href='#default'>
               Home
             </a>
           </li>
-          <li className='nav-item'>
+          <li className={styles.nav_item}>
             <a href='#default'>Contact</a>
           </li>
         </ul>

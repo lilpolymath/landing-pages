@@ -1,6 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
+import styles from "./style.module.css";
+
+
 const Hero = () => {
   const [[index, dir], setIndex] = useState([0, 0]);
 
@@ -46,39 +49,39 @@ const Hero = () => {
 
   return (
     <main>
-      <div className='hero'>
-        <div className='hero-text'>
-          <h2 className='main'>Click and control your business</h2>
-          <p className='desc'>
+      <div className={styles.hero}>
+        <div className={styles.hero_text}>
+          <h2 className={styles.main}>Click and control your business</h2>
+          <p className={styles.desc}>
             From ads that dance or sing to MTV-like commercials, online
             advertisers are now using a new type of technology "rich media" to
             attract consumers.
           </p>
-          <div className='buttons'>
-            <button className='first'>Buy now</button>
+          <div className={styles.buttons}>
+            <button className={styles.first}>Buy now</button>
           </div>
         </div>
-        <div className='index'>
-          <div className='slider'>
-            <p className='slider-text'>01</p>
+        <div className={styles.index}>
+          <div className={styles.slider}>
+            <p className={styles.slider_text}>01</p>
             {images.map(item => (
               <div
                 key={item.index}
                 onClick={() => onClick(item)}
                 className={
-                  index === item.index - 1 ? 'numbers active' : 'numbers'
+                  index === item.index - 1 ? styles.numbers_active : styles.numbers
                 }
               />
             ))}
-            <p className='slider-text'>0{images.length}</p>
+            <p className={styles.slider_text}>0{images.length}</p>
           </div>
         </div>
       </div>
 
-      <div className='hero-image'>
+      <div className={styles.hero_image}>
         <figure>
           <div
-            className='image'
+            className={styles.image}
             style={{
               backgroundImage:
                 'url(https://res.cloudinary.com/favourcodes/image/upload/v1594830783/Placeholder_5_zytpbh.png)',
@@ -86,10 +89,10 @@ const Hero = () => {
           />
         </figure>
 
-        <div className='next'>
+        <div className={styles.next}>
           {imageTransitions.map(({ item, props, key }) => (
             <animated.div
-              className='next-image'
+              className={styles.next_image}
               alt=''
               key={key}
               style={{
@@ -98,8 +101,8 @@ const Hero = () => {
               }}
             />
           ))}
-          <div className='play'>
-            <div className='play-button' />
+          <div className={styles.play}>
+            <div className={styles.play_button} />
           </div>
         </div>
       </div>

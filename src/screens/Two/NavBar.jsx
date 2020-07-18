@@ -1,14 +1,16 @@
 import React from 'react';
 import MenuIcon from '../../assets/icons/MenuIcon';
 
+import styles from "./style.module.css";
+
 const NavBar = () => {
   return (
     <header>
-      <a href='#default' className='logo'>
+      <a href='#default' className={styles.logo}>
         Gravity
       </a>
       <nav>
-        <a className='hamburger' href='#default'>
+        <a className={styles.hamburger} href='#default'>
           <MenuIcon />
         </a>
       </nav>

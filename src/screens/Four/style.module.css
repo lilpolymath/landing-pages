@@ -4,14 +4,15 @@
 }
 
 body {
-  background-color: #4737ff;
-  color: white;
+  background-color: #d9d3d3;
   max-width: 1140px;
   padding: 0px 12px;
   margin: auto;
   height: auto;
   background-repeat: no-repeat;
-  background-image: url('./G.svg');
+  background-image: none;
+  background-position-x: 45%;
+  background-size: contain;
 }
 
 /* NAVBAR */
@@ -33,18 +34,20 @@ nav {
 
 .logo {
   display: flex;
+  flex: 0.6;
 }
 
 .logo a {
   font-size: 2em;
   line-height: 25px;
-  color: white;
   font-weight: bold;
   text-decoration: none;
+  color: black;
 }
 
-.left-nav {
+.left_nav {
   display: flex;
+  flex: 0.4;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -59,13 +62,13 @@ ul {
   display: none;
 }
 
-.nav-item a {
-  color: #ffffffd1;
+.nav_item a {
+  color: #222222;
   text-decoration: none;
 }
 
 a.active {
-  color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /* HAMBURGER */
@@ -76,15 +79,15 @@ a.active {
   justify-content: flex-end;
 }
 
-.hamburger-icon {
+.hamburger_icon {
   z-index: 6;
   padding: 12px 5px;
 }
 
-.hamburger-icon span {
+.hamburger_icon span {
   height: 3px;
   width: 40px;
-  background-color: white;
+  background-color: black;
   display: block;
   margin: 5px 0px 5px 0px;
   transition: 0.75s ease-in-out;
@@ -98,13 +101,13 @@ span:nth-of-type(2) {
 
 .none span:nth-of-type(1) {
   transform: translate(0%, 425%) rotate(-45deg);
-  background-color: white;
+  background-color: black;
 }
 
 .none span:nth-of-type(2) {
   transform: rotate(45deg);
   width: 40px;
-  background-color: white;
+  background-color: black;
 }
 
 /* END OF HAMBURGER */
@@ -112,20 +115,21 @@ span:nth-of-type(2) {
 /* MENUBAR */
 
 .menubar {
-  background-color: #4737ff;
+  background-color: #d9d3d3;
   position: absolute;
   width: 100%;
-  height: 120px;
+  height: 100%;
   top: 150%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
   padding: 12px;
   z-index: 10;
 }
 
+.menu_links,
 li,
 a {
-  color: #4737ff;
+  color: #d9d3d3;
   transition: 0.5s ease-in-out;
   font-size: 18px;
   margin: 12px 0;
@@ -138,22 +142,16 @@ a {
 
 /* HERO */
 
-.hero {
+main {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   margin: 2em auto;
 }
 
-.left {
+.hero {
   display: flex;
   flex-direction: column;
-  margin-top: 36px;
-}
-
-.right {
-  display: flex;
-  position: relative;
 }
 
 .label {
@@ -166,13 +164,28 @@ a {
 .main {
   font-size: 54px;
   text-transform: capitalize;
+  font-weight: bold;
   line-height: 64px;
+}
+
+.hero_text {
+  margin-top: 36px;
+  order: 1;
 }
 
 .desc {
   font-size: 18px;
+  color: rgba(22, 22, 22, 0.8);
   line-height: 28px;
   margin: 30px 0;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.3;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
 }
 
 button {
@@ -181,82 +194,92 @@ button {
   background-color: white;
   outline: none !important;
   border: none;
-  margin-right: 2em;
   font-size: 14px;
   height: 50px;
-  width: 160px;
+  width: 150px;
   text-transform: uppercase;
   font-weight: bold;
+  border: 3px solid #4737ff;
 }
 
-.buttons {
-  display: flex;
-  margin: 32px 0;
+.first {
+  background-color: #4737ff;
+  color: white;
+  border: none;
+  margin-right: 30px;
 }
 
 .first:hover {
-  background-color: #4737ff;
-  color: white;
-  border: 3px solid white;
-}
-
-.second {
-  background-color: #4737ff;
-  color: white;
-  border: 3px solid white;
-}
-
-.second:hover {
   color: #4737ff;
   background-color: white;
+  border: 3px solid #4737ff;
 }
 
-p {
-  font-size: 18px;
-  line-height: 28px;
+svg {
+  fill: black;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.hero_image {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
 }
 
 figure {
   width: 100%;
+  height: 80vh;
 }
 
 .image {
   width: 100%;
-  height: auto;
-}
-
-.play-button {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid black;
-  margin-top: 20px;
-  margin-left: 27.5px;
-}
-
-.play {
+  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 65px;
-  height: 65px;
-  background-color: white;
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  will-change: transform, opacity;
 }
 
-svg {
-  fill: white;
-  height: 32px;
-  width: 32px;
-  margin-right: 1em;
+.next {
+  display: none;
 }
 
-footer {
-  margin: 2em 0;
+.numbers {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  order: 0;
+}
+
+div.active {
+  color: white;
+  background-color: #f96241;
+}
+
+.numbers:hover {
+  color: white;
+  background-color: #f96241;
 }
 
 @media screen and (min-width: 769px) {
+  body {
+    background-image: url('./Double.svg');
+  }
+
   nav {
     margin-top: 36px;
   }
@@ -265,28 +288,29 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 64px;
   }
 
-  .hamburger {
-    display: none;
-  }
-
-  .left {
-    flex: 0.4;
-  }
-
-  .right {
-    flex: 0.5;
+  main {
+    flex-direction: row;
+    margin: 80px auto 0;
   }
 
   .hero {
-    flex-direction: row;
-    margin-top: 80px;
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero_text {
+    order: 0;
   }
 
   .desc {
     font-size: 18px;
     line-height: 26px;
+    width: 70%;
   }
 
   .main {
@@ -302,13 +326,39 @@ footer {
     margin-bottom: 1em;
   }
 
-  .buttons {
+  .hero_image {
+    margin-top: -50px;
     display: flex;
-    margin: 1.25em 0;
+    margin-bottom: 0;
+    flex: 0.4;
+    overflow-x: unset;
   }
 
-  .image {
-    width: 100%;
+  .buttons {
+    margin-top: 64px;
+  }
+
+  .image:hover {
+    box-shadow: 0px 0px 20px 0px #a7a7a7;
+  }
+
+  .next {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: -125px;
+    width: 225px;
+    height: 300px;
+    box-shadow: -3px -1px 15px 3px rgba(98, 98, 98, 1);
+  }
+
+  .preview {
+    display: none;
+  }
+
+  .next_image {
+    width: 225px;
+    object-fit: cover;
     height: auto;
   }
 }

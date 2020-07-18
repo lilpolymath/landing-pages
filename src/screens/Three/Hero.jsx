@@ -1,5 +1,6 @@
 import React from 'react';
 
+import styles from './style.module.css'
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
@@ -10,30 +11,30 @@ const imageSrc =
 const Hero = () => {
   return (
     <main>
-      <section className='hero'>
-        <div className='social'>
+      <section className={styles.hero}>
+        <div className={styles.social}>
           <Twitter />
           <LinkedIn />
           <Google />
         </div>
-        <div className='hero-text'>
-          <h2 className='main'>Vampires: the Romantic Ideology Behind Them.</h2>
-          <p className='desc'>
+        <div className={styles.hero_text}>
+          <h2 className={styles.main}>Vampires: the Romantic Ideology Behind Them.</h2>
+          <p className={styles.desc}>
             Many people have the notion that enlightenment is one state. Many
             also believe that when it is attained, a person is forever in that
             state.
           </p>
-          <div className='buttons'>
-            <button className='first'>Get Started</button>
+          <div className={styles.buttons}>
+            <button className={styles.first}>Get Started</button>
           </div>
         </div>
       </section>
-      <section className='hero-image'>
+      <section className={styles.hero_image}>
         <figure>
-          <img className='image' alt='' src={imageSrc} />
+          <img className={styles.image} alt='' src={imageSrc} />
         </figure>
-        <div className='play'>
-          <div className='play-button'></div>
+        <div className={styles.play}>
+          <div className={styles.play_button}></div>
         </div>
       </section>
     </main>

@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
+import styles from './style.module.css';
+
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
@@ -8,6 +10,8 @@ import Twitter from '../../assets/icons/Twitter';
 const Hero = () => {
   const [[index, next, dir], setIndex] = useState([0, 1, 0]);
   const [active, setActive] = useState(false);
+
+  const none = styles.numbers + ' ' + styles.active;
 
   const images = [
     {
@@ -62,30 +66,28 @@ const Hero = () => {
 
   return (
     <main>
-      <div className='hero'>
-        <div className='hero-text'>
-          <p className='label'>Shooting Stars</p>
-          <h2 className='main'>Pictures in the Sky.</h2>
-          <p className='desc'>
+      <div className={styles.hero}>
+        <div className={styles.hero_text}>
+          <p className={styles.label}>Shooting Stars</p>
+          <h2 className={styles.main}>Pictures in the Sky.</h2>
+          <p className={styles.desc}>
             Many people have the notion that enlightenment is one state. Many
             also believe that when it is attained, a person is forever in that
             state.
           </p>
-          <div className='buttons'>
-            <button className='first'>Get Started</button>
+          <div className={styles.buttons}>
+            <button className={styles.first}>Get Started</button>
             <Twitter />
             <LinkedIn />
             <Google />
           </div>
         </div>
-        <div className='index'>
+        <div className={styles.index}>
           {images.map(item => (
             <div
               key={item.index}
               onClick={() => onClick(item)}
-              className={
-                index === item.index - 1 ? 'numbers active' : 'numbers'
-              }
+              className={index === item.index - 1 ? none : styles.numbers}
             >
               {item.index}
             </div>
@@ -93,14 +95,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='hero-image'>
+      <div className={styles.hero_image}>
         <figure
           onMouseEnter={() => setActive(!active)}
           onMouseLeave={() => setActive(!active)}
         >
           {imageTransitions.map(({ item, props, key }) => (
             <animated.div
-              className='image'
+              className={styles.image}
               key={key}
               style={{
                 ...props,
@@ -110,9 +112,9 @@ const Hero = () => {
           ))}
         </figure>
 
-        <div className={active ? 'preview' : 'next'}>
+        <div className={active ? styles.preview : styles.next}>
           <img
-            className='next-image'
+            className={styles.next_image}
             alt=''
             src={`https://res.cloudinary.com/favourcodes/image/upload/${images[next].src}`}
           />

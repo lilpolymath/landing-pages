@@ -4,15 +4,14 @@
 }
 
 body {
-  background-color: #f96341;
+  background-color: #4737ff;
+  color: white;
   max-width: 1140px;
   padding: 0px 12px;
-  color: white;
   margin: auto;
   height: auto;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./A.svg');
+  background-image: url('./G.svg');
 }
 
 /* NAVBAR */
@@ -34,20 +33,18 @@ nav {
 
 .logo {
   display: flex;
-  flex: 0.4;
 }
 
 .logo a {
   font-size: 2em;
   line-height: 25px;
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  color: white;
 }
 
-.left-nav {
+.left_nav {
   display: flex;
-  flex: 0.6;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -62,15 +59,13 @@ ul {
   display: none;
 }
 
-.nav-item a {
+.nav_item a {
+  color: #ffffffd1;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 14px;
 }
 
-.arrow {
-  font-size: 20px;
+a.active {
+  color: #ffffff;
 }
 
 /* HAMBURGER */
@@ -116,29 +111,21 @@ span:nth-of-type(2) {
 
 /* MENUBAR */
 
-.no-menubar {
-  display: none;
-  width: 0px;
-  height: 0px;
-}
-
 .menubar {
-  background-color: #f96241;
+  background-color: #4737ff;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120px;
   top: 150%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   padding: 12px;
   z-index: 10;
-  will-change: opacity;
 }
 
-.menu-links,
 li,
 a {
-  color: #ffffffd1;
+  color: #4737ff;
   transition: 0.5s ease-in-out;
   font-size: 18px;
   margin: 12px 0;
@@ -148,46 +135,38 @@ a {
 /* END OF MENUBAR */
 
 /* END OF THE NAVBAR */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1em auto 2em;
-}
+
+/* HERO */
 
 .hero {
   display: flex;
-  flex: 1;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+
+.left {
+  display: flex;
   flex-direction: column;
+  margin-top: 36px;
 }
 
-svg {
-  fill: white;
-  height: 32px;
-  width: 32px;
-  text-align: center;
+.right {
+  display: flex;
+  position: relative;
 }
 
-.social svg {
-  fill: white;
-  height: 32px;
-  width: 32px;
-  text-align: center;
-}
-
-.social svg:not(:last-child) {
-  margin-right: 8px;
+.label {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .main {
   font-size: 54px;
   text-transform: capitalize;
-  font-weight: bold;
   line-height: 64px;
-}
-
-.hero-text {
-  margin-top: 36px;
 }
 
 .desc {
@@ -196,17 +175,49 @@ svg {
   margin: 30px 0;
 }
 
-.buttons {
-  display: flex;
-  flex: 0.3;
-  flex-direction: column;
-  justify-content: center;
+button {
+  letter-spacing: 3px;
+  color: #4737ff;
+  background-color: white;
+  outline: none !important;
+  border: none;
+  margin-right: 2em;
+  font-size: 14px;
+  height: 50px;
+  width: 160px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.hero-image {
+.buttons {
   display: flex;
-  margin-bottom: 30px;
-  position: relative;
+  margin: 32px 0;
+}
+
+.first:hover {
+  background-color: #4737ff;
+  color: white;
+  border: 3px solid white;
+}
+
+.second {
+  background-color: #4737ff;
+  color: white;
+  border: 3px solid white;
+}
+
+.second:hover {
+  color: #4737ff;
+  background-color: white;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+figure {
+  width: 100%;
 }
 
 .image {
@@ -214,7 +225,7 @@ svg {
   height: auto;
 }
 
-.play-button {
+.play_button {
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -226,15 +237,23 @@ svg {
 
 .play {
   position: absolute;
-  bottom: 3px;
+  top: 0;
+  left: 0;
   width: 65px;
   height: 65px;
   background-color: white;
   text-align: center;
 }
 
-.hero {
-  order: 1;
+svg {
+  fill: white;
+  height: 32px;
+  width: 32px;
+  margin-right: 1em;
+}
+
+footer {
+  margin: 2em 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -248,37 +267,48 @@ svg {
     justify-content: space-between;
   }
 
-  main {
-    flex-direction: row;
-    margin: 96px auto 0;
+  .hamburger {
+    display: none;
+  }
+
+  .left {
+    flex: 0.4;
+  }
+
+  .right {
+    flex: 0.5;
   }
 
   .hero {
-    flex: 0.35;
-    order: 0;
-    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 80px;
   }
 
   .desc {
-    width: 70%;
+    font-size: 18px;
+    line-height: 26px;
   }
 
-  .hero-image {
+  .main {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+  }
+
+  .label {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .buttons {
     display: flex;
-    margin-bottom: 0;
-    flex: 0.6;
-    z-index: 3;
-    margin-top: -54px;
-    position: relative;
+    margin: 1.25em 0;
   }
 
   .image {
-    width: 110%;
+    width: 100%;
     height: auto;
-  }
-
-  .play {
-    bottom: 150px;
-    left: -35px;
   }
 }

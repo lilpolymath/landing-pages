@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './style.module.css'
+
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
@@ -10,27 +12,27 @@ const imageSrc =
 const Hero = () => {
   return (
     <main>
-      <section className='hero'>
-        <div className='hero-text'>
-          <h2 className='main'>From Dreams to Reality</h2>
-          <p className='desc'>
+      <section className={styles.hero}>
+        <div className={styles.hero_text}>
+          <h2 className={styles.main}>From Dreams to Reality</h2>
+          <p className={styles.desc}>
             Mobile augmented reality applications are gaining popularity due to
             the wide adoption of mobile and especially.
           </p>
         </div>
 
-        <div className='social'>
+        <div className={styles.social}>
           <Twitter />
           <LinkedIn />
           <Google />
         </div>
       </section>
-      <section className='hero-image'>
+      <section className={styles.hero_image}>
         <figure>
-          <img className='image' alt='' src={imageSrc} />
+          <img className={styles.image} alt='' src={imageSrc} />
         </figure>
-        <div className='play'>
-          <div className='play-button'></div>
+        <div className={styles.play}>
+          <div className={styles.play_button}></div>
         </div>
       </section>
     </main>

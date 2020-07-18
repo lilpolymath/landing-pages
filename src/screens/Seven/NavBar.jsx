@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
 import useWindowDimensions from '../../hooks/use-window-dimension';
+import styles from './style.module.css';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const { width } = useWindowDimensions();
+
+  const show = styles.hamburger_icon + ' '+ styles.none;
 
   const toggleMenu = () => {
     if (width < 769) {
@@ -20,12 +23,12 @@ const NavBar = () => {
   });
 
   return (
-    <div className='pos'>
-      <nav className='header'>
-        <div className='logo'>
+    <div className={styles.pos}>
+      <nav className={styles.header}>
+        <div className={styles.logo}>
           <a href='#default'>Gravity</a>
         </div>
-        <div className='search'>
+        <div className={styles.search}>
           <svg
             width='20'
             height='20'
@@ -41,16 +44,16 @@ const NavBar = () => {
             />
           </svg>
         </div>
-        <div className='left-nav'>
-          <div onClick={toggleMenu} className='hamburger'>
-            <div className={open ? 'hamburger-icon none' : 'hamburger-icon'}>
+        <div className={styles.left_nav}>
+          <div onClick={toggleMenu} className={styles.hamburger}>
+            <div className={open ? show : styles.hamburger_icon}>
               <span></span>
               <span></span>
             </div>
           </div>
         </div>
       </nav>
-      <animated.div style={props} className='menubar'>
+      <animated.div style={props} className={styles.menubar}>
         <div style={{ width: '100%' }}>
           <input
             autoComplete='off'
