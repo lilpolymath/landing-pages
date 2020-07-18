@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Container from '../../common/Container';
-import backgroundImage from './G.svg'
+import styles from './style.module.css';
 
 import NavBar from './NavBar';
 import Hero from './Hero';
@@ -10,12 +10,11 @@ import Footer from './Footer';
 export class HeaderOne extends Component {
   render() {
     return (
-      <Container backgroundImage={backgroundImage} color="white" bgColor="#4737ff">
+      <Container styles={styles.body}>
         <NavBar />
         <Hero />
         <Footer />
       </Container>
-      
     );
   }
 }

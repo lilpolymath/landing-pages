@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './style.module.css'
+import styles from './style.module.css';
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
 import Twitter from '../../assets/icons/Twitter';
@@ -10,7 +10,7 @@ const imageSrc =
 
 const Hero = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.social}>
           <Twitter />
@@ -18,7 +18,9 @@ const Hero = () => {
           <Google />
         </div>
         <div className={styles.hero_text}>
-          <h2 className={styles.main}>Vampires: the Romantic Ideology Behind Them.</h2>
+          <h2 className={styles.main_text}>
+            Vampires: the Romantic Ideology Behind Them.
+          </h2>
           <p className={styles.desc}>
             Many people have the notion that enlightenment is one state. Many
             also believe that when it is attained, a person is forever in that

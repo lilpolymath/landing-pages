@@ -65,11 +65,11 @@ const Hero = () => {
   });
 
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.hero}>
         <div className={styles.hero_text}>
           <p className={styles.label}>Shooting Stars</p>
-          <h2 className={styles.main}>Pictures in the Sky.</h2>
+          <h2 className={styles.main_text}>Pictures in the Sky.</h2>
           <p className={styles.desc}>
             Many people have the notion that enlightenment is one state. Many
             also believe that when it is attained, a person is forever in that

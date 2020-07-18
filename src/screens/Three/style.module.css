@@ -1,22 +1,8 @@
-* {
-  margin: 0;
-  font: 14px 'Fira Sans', sans-serif;
-}
-
 body {
   background-color: #f7edde;
-  max-width: 1140px;
-  padding: 0px 12px;
-  margin: auto;
-  height: auto;
   background-repeat: no-repeat;
   background-image: none;
   background-position-x: 30%;
-}
-
-nav {
-  z-index: 10;
-  position: relative;
 }
 
 .pos {
@@ -49,12 +35,7 @@ nav {
   display: none;
 }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.nav-item a {
+.nav_item a {
   color: #222222;
   text-decoration: none;
 }
@@ -130,11 +111,11 @@ a {
 
 /* END OF MENUBAR */
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1em auto 2em;
+  margin: 1rem auto 2rem;
 }
 
 .hero {
@@ -154,7 +135,7 @@ svg:not(:last-child) {
   margin-right: 8px;
 }
 
-.main {
+.main_text {
   font-size: 54px;
   text-transform: capitalize;
   font-weight: bold;
@@ -245,10 +226,6 @@ button {
     background-image: url('./Single.svg');
   }
 
-  nav {
-    margin-top: 36px;
-  }
-
   .nav {
     display: flex;
     flex-direction: row;
@@ -256,7 +233,7 @@ button {
     margin-right: 64px;
   }
 
-  main {
+  .main {
     flex-direction: row;
     margin: 112px auto 0;
   }

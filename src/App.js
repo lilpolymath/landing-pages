@@ -5,10 +5,10 @@ import './App.css';
 
 import HeroOne from './screens/One';
 import HeroTwo from './screens/Two';
-// import HeroThree from './screens/Three';
-// import HeroFour from './screens/Four';
-// import HeroFive from './screens/Five';
-// import HeroSeven from './screens/Seven';
+import HeroThree from './screens/Three';
+import HeroFour from './screens/Four';
+import HeroFive from './screens/Five';
+import HeroSeven from './screens/Seven';
 
 function App() {
   return (
@@ -26,6 +26,18 @@ function App() {
                 <li>
                   <Link to='/two'>Two</Link>
                 </li>
+                <li>
+                  <Link to='/three'>Three</Link>
+                </li>
+                <li>
+                  <Link to='/four'>Four</Link>
+                </li>
+                <li>
+                  <Link to='/five'>Five</Link>
+                </li>
+                <li>
+                  <Link to='/seven'>Seven</Link>
+                </li>
               </ul>
             )}
           ></Route>
@@ -34,6 +46,18 @@ function App() {
           </Route>
           <Route path='/two'>
             <HeroTwo />
+          </Route>
+          <Route path='/three'>
+            <HeroThree />
+          </Route>
+          <Route path='/four'>
+            <HeroFour />
+          </Route>
+          <Route path='/five'>
+            <HeroFive />
+          </Route>
+          <Route path='/seven'>
+            <HeroSeven />
           </Route>
         </Switch>
       </div>

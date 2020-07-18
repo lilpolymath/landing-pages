@@ -7,9 +7,9 @@ const imageSrc =
 
 const Hero = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.hero}>
-        <div className={styles.main}>
+        <div className={styles.text}>
           <h2>Branding do you know who you are</h2>
           <p className={styles.desc}>
             The following tips on creating a direct mail advertising campaign

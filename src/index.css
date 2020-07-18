@@ -4,7 +4,7 @@
 
 * {
   margin: 0;
-  font: 14px 'Fira Sans', sans-serif;
+  font: 62.5% 'Fira Sans', sans-serif;
 }
 
 
@@ -25,5 +25,12 @@ code {
     monospace;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
 
+nav {
+  z-index: 10;
+}
 

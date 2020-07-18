@@ -1,17 +1,17 @@
 import React from 'react';
 
-import styles from "./style.module.css"
+import styles from './style.module.css';
 
 const imageSrc =
   'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Placeholder_hoy0ma.png';
 
 const Hero = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.left}>
           <p className={styles.label}>Shooting Stars</p>
-          <h3 className={styles.main}>The Amazing Hubble</h3>
+          <h3 className={styles.main_text}>The Amazing Hubble</h3>
           <p className={styles.desc}>
             In efforts to expand our horizons, we welcome every
             investment-minded individuals to join us in Contodel Investment

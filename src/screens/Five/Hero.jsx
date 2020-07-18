@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './style.module.css'
+import styles from './style.module.css';
 
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
@@ -11,10 +11,10 @@ const imageSrc =
 
 const Hero = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.hero_text}>
-          <h2 className={styles.main}>From Dreams to Reality</h2>
+          <h2 className={styles.main_text}>From Dreams to Reality</h2>
           <p className={styles.desc}>
             Mobile augmented reality applications are gaining popularity due to
             the wide adoption of mobile and especially.

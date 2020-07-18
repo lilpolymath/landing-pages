@@ -1,10 +1,10 @@
-
-
-/* NAVBAR */
-nav {
-  z-index: 10;
+.body {
+  color: white;
+  background-color: #4737ff;
+  background-image: url('./G.svg');
 }
 
+/* NAVBAR */
 .pos {
   position: relative;
 }
@@ -22,7 +22,7 @@ nav {
 }
 
 .logo a {
-  font-size: 2em;
+  font-size: 3rem;
   line-height: 25px;
   color: white;
   font-weight: bold;
@@ -34,11 +34,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .nav {
@@ -62,12 +57,12 @@ a.active {
   justify-content: flex-end;
 }
 
-.hamburger-icon {
+.hamburger_icon {
   z-index: 6;
   padding: 12px 5px;
 }
 
-.hamburger-icon span {
+.hamburger_icon span {
   height: 3px;
   width: 40px;
   background-color: white;
@@ -75,6 +70,7 @@ a.active {
   margin: 5px 0px 5px 0px;
   transition: 0.75s ease-in-out;
   transform: none;
+  color: black;
 }
 
 span:nth-of-type(2) {
@@ -113,7 +109,7 @@ li,
 a {
   color: #4737ff;
   transition: 0.5s ease-in-out;
-  font-size: 18px;
+  font-size: 1.5rem;
   margin: 12px 0;
   padding-right: 12px;
 }
@@ -128,7 +124,7 @@ a {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 .left {
@@ -149,7 +145,7 @@ a {
   margin-bottom: 30px;
 }
 
-.main {
+.main_text {
   font-size: 54px;
   text-transform: capitalize;
   line-height: 64px;
@@ -177,7 +173,7 @@ button {
 
 .buttons {
   display: flex;
-  margin: 32px 0;
+  margin: 2rem 0;
 }
 
 .first:hover {
@@ -239,11 +235,10 @@ svg {
 }
 
 footer {
-  margin: 2em 0;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 769px) {
-
   .nav {
     display: flex;
     flex-direction: row;
@@ -272,7 +267,7 @@ footer {
     line-height: 26px;
   }
 
-  .main {
+  .main_text {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -1px;
@@ -287,7 +282,7 @@ footer {
 
   .buttons {
     display: flex;
-    margin: 1.25em 0;
+    margin: 20px 0;
   }
 
   .image {

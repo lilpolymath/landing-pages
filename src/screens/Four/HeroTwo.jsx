@@ -77,7 +77,7 @@ const Hero = () => {
   }));
 
   return (
-    <main>
+    <main className={styles.main}>
       <div className='hero'>
         <div className='hero-text'>
           <p className='label'>Shooting Stars</p>
