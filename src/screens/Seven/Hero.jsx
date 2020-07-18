@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
-
+import Button from '../../common/Button';
 import styles from './style.module.css';
 
 const Hero = () => {
@@ -58,7 +58,7 @@ const Hero = () => {
             attract consumers.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.first}>Buy now</button>
+            <Button label='Buy now' />
           </div>
         </div>
         <div className={styles.index}>

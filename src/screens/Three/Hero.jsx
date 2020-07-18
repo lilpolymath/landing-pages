@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../../common/Button';
 import styles from './style.module.css';
 import Google from '../../assets/icons/Google';
 import LinkedIn from '../../assets/icons/LinkedIn';
@@ -27,7 +28,7 @@ const Hero = () => {
             state.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.first}>Get Started</button>
+            <Button label="Get started" />
           </div>
         </div>
       </section>

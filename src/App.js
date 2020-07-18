@@ -21,22 +21,22 @@ function App() {
             render={() => (
               <ul>
                 <li>
-                  <Link to='/one'>One</Link>
+                  <Link style={{ color: 'black' }} to='/one'>One</Link>
                 </li>
                 <li>
-                  <Link to='/two'>Two</Link>
+                  <Link style={{ color: 'black' }} to='/two'>Two</Link>
                 </li>
                 <li>
-                  <Link to='/three'>Three</Link>
+                  <Link style={{ color: 'black' }} to='/three'>Three</Link>
                 </li>
                 <li>
-                  <Link to='/four'>Four</Link>
+                  <Link style={{ color: 'black' }} to='/four'>Four</Link>
                 </li>
                 <li>
-                  <Link to='/five'>Five</Link>
+                  <Link style={{ color: 'black' }} to='/five'>Five</Link>
                 </li>
                 <li>
-                  <Link to='/seven'>Seven</Link>
+                  <Link style={{ color: 'black' }} to='/seven'>Seven</Link>
                 </li>
               </ul>
             )}

@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
+import Button from '../../common/Button';
 import styles from './style.module.css';
 
 import Google from '../../assets/icons/Google';
@@ -76,7 +77,7 @@ const Hero = () => {
             state.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.first}>Get Started</button>
+            <Button />
             <Twitter />
             <LinkedIn />
             <Google />

@@ -19,8 +19,8 @@ const Hero = () => {
           </p>
         </div>
         <div className={styles.buttons}>
-          <Button label='Design your module' />
-          <button className={styles.second}>Get Demo version</button>
+          <Button width="250px" label='Design your module' />
+          <Button type="second" width="250px" label='Get Demo version' />
           <a className={styles.external} href='/'>
             Learn More
           </a>
