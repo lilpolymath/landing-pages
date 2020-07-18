@@ -97,6 +97,7 @@ const Hero = () => {
 
       <div className={styles.hero_image}>
         <figure
+          className={styles.figure}
           onMouseEnter={() => setActive(!active)}
           onMouseLeave={() => setActive(!active)}
         >

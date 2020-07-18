@@ -1,7 +1,7 @@
-body {
+.body {
   background-color: #d9d3d3;
   background-repeat: no-repeat;
-  background-image: none;
+  background-image: url('./Double.svg');
   background-position-x: 45%;
   background-size: contain;
 }

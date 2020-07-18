@@ -1,7 +1,7 @@
-body {
+.body {
   background-color: #f7edde;
   background-repeat: no-repeat;
-  background-image: none;
+  background-image: url('./Single.svg');
   background-position-x: 30%;
 }
 

@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
+import Hamburger from "../../common/Hamburger"
 import useWindowDimensions from '../../hooks/use-window-dimension';
 import styles from './style.module.css'
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const { width } = useWindowDimensions();
-
-  const show = styles.hamburger_icon + ' ' + styles.none
 
   const toggleMenu = () => {
     if (width < 769) {
@@ -38,12 +37,7 @@ const NavBar = () => {
             <a href='#default'>Contact</a>
           </li>
         </ul>
-        <div onClick={toggleMenu} className={styles.hamburger}>
-          <div className={open ? show : styles.hamburger_icon}>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+        <Hamburger toggleMenu={toggleMenu} open={open} />
       </nav>
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_links}>

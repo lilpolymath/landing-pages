@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { animated, useTransition, config } from 'react-spring';
 
+
 import styles from './style.module.css';
 
 const Hero = () => {

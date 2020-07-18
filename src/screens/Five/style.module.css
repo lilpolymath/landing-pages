@@ -1,4 +1,4 @@
-body {
+.body {
   background-color: #f96341;
   color: white;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ a {
 /* END OF THE NAVBAR */
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   margin: 1rem auto 2rem;
 }
@@ -219,10 +219,6 @@ svg {
   text-align: center;
 }
 
-.hero {
-  order: 1;
-}
-
 @media screen and (min-width: 769px) {
   .nav {
     display: flex;
@@ -237,7 +233,6 @@ svg {
 
   .hero {
     flex: 0.35;
-    order: 0;
     justify-content: space-around;
   }
 
