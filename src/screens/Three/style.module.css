@@ -160,7 +160,7 @@ a {
   justify-content: center;
 }
 
-.hero-image {
+.hero_image {
   display: flex;
   margin-bottom: 30px;
   position: relative;
