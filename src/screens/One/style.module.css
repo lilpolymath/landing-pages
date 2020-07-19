@@ -1,7 +1,6 @@
 .body {
   color: white;
   background-color: #4737ff;
-  background-image: url('./G.svg');
 }
 
 /* NAVBAR */
@@ -157,13 +156,12 @@ a {
   margin: 30px 0;
 }
 
-button {
+.button {
   letter-spacing: 3px;
   color: #4737ff;
   background-color: white;
   outline: none !important;
   border: none;
-  margin-right: 2em;
   font-size: 1.5rem;
   height: 50px;
   width: 200px;
@@ -174,6 +172,9 @@ button {
 .buttons {
   display: flex;
   margin: 2rem 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .first:hover {
@@ -186,6 +187,7 @@ button {
   background-color: #4737ff;
   color: white;
   border: 3px solid white;
+  margin-top: 2rem;
 }
 
 .second:hover {
@@ -227,18 +229,22 @@ p {
   text-align: center;
 }
 
-svg {
+.svg {
   fill: white;
   height: 32px;
   width: 32px;
-  margin-right: 1em;
+  margin-right: 2rem;
 }
 
 footer {
   margin: 2rem 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
+  .body {
+    background-image: url('./G.svg');
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
@@ -281,8 +287,13 @@ footer {
   }
 
   .buttons {
-    display: flex;
+    display: block;
     margin: 20px 0;
+  }
+
+  .button {
+    margin-top: 2rem;
+    margin-right: 2rem;
   }
 
   .image {

@@ -147,21 +147,14 @@ a {
   flex-direction: column;
 }
 
-svg {
+.svg {
   fill: white;
   height: 32px;
   width: 32px;
   text-align: center;
 }
 
-.social svg {
-  fill: white;
-  height: 32px;
-  width: 32px;
-  text-align: center;
-}
-
-.social svg:not(:last-child) {
+.svg:not(:last-child) {
   margin-right: 8px;
 }
 

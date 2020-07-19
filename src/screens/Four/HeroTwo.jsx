@@ -95,7 +95,7 @@ const Hero = () => {
             >
               {width < 800 ? 'Contact Us' : 'Activate Easter Egg'}
             </button>
-            <Twitter />
+            <Twitter className={styles.svg} />
             <LinkedIn />
             <Google />
           </div>

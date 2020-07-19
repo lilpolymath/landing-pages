@@ -6,6 +6,9 @@ const imageSrc =
   'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Placeholder_hoy0ma.png';
 
 const Hero = () => {
+  const first = styles.first + styles.button
+  const second = styles.second + styles.button
+
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
@@ -18,8 +21,8 @@ const Hero = () => {
             Company
           </p>
           <div className={styles.buttons}>
-            <button className={styles.first}>Get Started</button>
-            <button className={styles.second}>Learn More</button>
+            <button className={first}>Get Started</button>
+            <button className={second}>Learn More</button>
           </div>
         </div>
         <div className={styles.right}>

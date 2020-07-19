@@ -78,9 +78,9 @@ const Hero = () => {
           </p>
           <div className={styles.buttons}>
             <Button />
-            <Twitter />
-            <LinkedIn />
-            <Google />
+            <Twitter className={styles.svg} />
+            <LinkedIn className={styles.svg} />
+            <Google className={styles.svg} />
           </div>
         </div>
         <div className={styles.index}>
