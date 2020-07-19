@@ -6,8 +6,8 @@ const imageSrc =
   'https://res.cloudinary.com/favourcodes/image/upload/v1588658554/Placeholder_hoy0ma.png';
 
 const Hero = () => {
-  const first = styles.first + styles.button
-  const second = styles.second + styles.button
+  const first = styles.first + ' ' + styles.button;
+  const second = styles.second + ' ' + styles.button;
 
   return (
     <main className={styles.main}>
