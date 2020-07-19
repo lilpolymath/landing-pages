@@ -22,9 +22,9 @@ const Hero = () => {
         </div>
 
         <div className={styles.social}>
-          <Twitter />
-          <LinkedIn />
-          <Google />
+          <Twitter className={styles.svg} />
+          <LinkedIn className={styles.svg} />
+          <Google className={styles.svg} />
         </div>
       </section>
       <section className={styles.hero_image}>

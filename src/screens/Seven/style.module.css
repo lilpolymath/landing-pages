@@ -149,7 +149,7 @@ span:nth-of-type(2) {
   margin-top: 30px;
 }
 
-svg {
+.svg {
   fill: black;
   height: 24px;
   width: 24px;

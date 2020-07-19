@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -21,22 +21,34 @@ function App() {
             render={() => (
               <ul>
                 <li>
-                  <Link style={{ color: 'black' }} to='/one'>One</Link>
+                  <Link style={{ color: 'black' }} to='/one'>
+                    One
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{ color: 'black' }} to='/two'>Two</Link>
+                  <Link style={{ color: 'black' }} to='/two'>
+                    Two
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{ color: 'black' }} to='/three'>Three</Link>
+                  <Link style={{ color: 'black' }} to='/three'>
+                    Three
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{ color: 'black' }} to='/four'>Four</Link>
+                  <Link style={{ color: 'black' }} to='/four'>
+                    Four
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{ color: 'black' }} to='/five'>Five</Link>
+                  <Link style={{ color: 'black' }} to='/five'>
+                    Five
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{ color: 'black' }} to='/seven'>Seven</Link>
+                  <Link style={{ color: 'black' }} to='/seven'>
+                    Seven
+                  </Link>
                 </li>
               </ul>
             )}

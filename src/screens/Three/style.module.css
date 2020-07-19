@@ -123,14 +123,14 @@ a {
   flex-direction: column;
 }
 
-svg {
+.svg {
   fill: black;
   height: 32px;
   width: 32px;
   text-align: center;
 }
 
-svg:not(:last-child) {
+.svg:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -160,7 +160,7 @@ svg:not(:last-child) {
   justify-content: center;
 }
 
-.hero-image {
+.hero_image {
   display: flex;
   margin-bottom: 30px;
   position: relative;

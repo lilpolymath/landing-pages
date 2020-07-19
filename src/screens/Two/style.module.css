@@ -19,7 +19,7 @@ header {
   display: inline;
 }
 
-svg {
+.svg {
   fill: black;
   height: 32px;
   width: 32px;
@@ -109,7 +109,6 @@ svg {
 }
 
 @media screen and (max-width: 768px) {
-
   .hero {
     flex-direction: column;
     justify-content: space-between;

@@ -14,9 +14,9 @@ const Hero = () => {
     <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.social}>
-          <Twitter />
-          <LinkedIn />
-          <Google />
+          <Twitter className={styles.svg} />
+          <LinkedIn className={styles.svg} />
+          <Google className={styles.svg} />
         </div>
         <div className={styles.hero_text}>
           <h2 className={styles.main_text}>
@@ -28,7 +28,7 @@ const Hero = () => {
             state.
           </p>
           <div className={styles.buttons}>
-            <Button label="Get started" />
+            <Button label='Get started' />
           </div>
         </div>
       </section>

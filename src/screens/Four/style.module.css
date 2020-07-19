@@ -170,12 +170,12 @@ a {
   margin-top: 30px;
 }
 
-svg {
+.svg {
   fill: black;
   height: 24px;
   width: 24px;
   text-align: center;
-  margin: 0 8px;
+  margin: -2rem 1rem 0;
 }
 
 .hero_image {
