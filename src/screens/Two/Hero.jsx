@@ -28,7 +28,7 @@ const Hero = () => {
       </section>
       <section className={styles.preview}>
         <figure>
-          <img className={styles.image} alt='' src={imageSrc} />
+          <img className={styles.image} alt='from dreams to reality landing page' src={imageSrc} />
         </figure>
       </section>
     </main>

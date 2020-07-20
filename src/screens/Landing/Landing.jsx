@@ -16,7 +16,7 @@ const Landing = () => {
             <div onClick={item.link} className={styles.item} key={item.key}>
               <img
                 className={styles.image_landing}
-                alt='landing'
+                alt=''
                 src={item.url}
               />
             </div>

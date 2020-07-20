@@ -29,7 +29,11 @@ const Hero = () => {
       </section>
       <section className={styles.hero_image}>
         <figure>
-          <img className={styles.image} alt='' src={imageSrc} />
+          <img
+            className={styles.image}
+            alt='art work of a woman holding an eye'
+            src={imageSrc}
+          />
         </figure>
         <div className={styles.play}>
           <div className={styles.play_button}></div>
