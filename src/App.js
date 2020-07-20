@@ -3,6 +3,7 @@ import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './App.css';
 
+import Main from './screens/Landing'
 import HeroOne from './screens/One';
 import HeroTwo from './screens/Two';
 import HeroThree from './screens/Three';
@@ -18,41 +19,43 @@ function App() {
           <Route
             exact
             path='/'
-            render={() => (
-              <ul>
-                <li>
-                  <Link style={{ color: 'black' }} to='/one'>
-                    One
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ color: 'black' }} to='/two'>
-                    Two
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ color: 'black' }} to='/three'>
-                    Three
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ color: 'black' }} to='/four'>
-                    Four
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ color: 'black' }} to='/five'>
-                    Five
-                  </Link>
-                </li>
-                <li>
-                  <Link style={{ color: 'black' }} to='/seven'>
-                    Seven
-                  </Link>
-                </li>
-              </ul>
-            )}
-          ></Route>
+            // render={() => (
+            //   <ul>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/one'>
+            //         One
+            //       </Link>
+            //     </li>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/two'>
+            //         Two
+            //       </Link>
+            //     </li>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/three'>
+            //         Three
+            //       </Link>
+            //     </li>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/four'>
+            //         Four
+            //       </Link>
+            //     </li>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/five'>
+            //         Five
+            //       </Link>
+            //     </li>
+            //     <li>
+            //       <Link style={{ color: 'black' }} to='/seven'>
+            //         Seven
+            //       </Link>
+            //     </li>
+            //   </ul>
+            // )}
+          >
+            <Main />
+          </Route>
           <Route path='/one'>
             <HeroOne />
           </Route>
