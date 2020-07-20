@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './App.css';
 
-import Main from './screens/Landing'
+import Landing from './screens/Landing'
 import HeroOne from './screens/One';
 import HeroTwo from './screens/Two';
 import HeroThree from './screens/Three';
@@ -54,7 +54,7 @@ function App() {
             //   </ul>
             // )}
           >
-            <Main />
+            <Landing />
           </Route>
           <Route path='/one'>
             <HeroOne />
