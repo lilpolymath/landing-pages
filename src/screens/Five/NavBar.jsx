@@ -33,7 +33,7 @@ const NavBar = () => {
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
-                <p className='arrow'>
+                <p className={styles.arrow}>
                   <a href='#default'>Go to the projects </a> &#8594;
                 </p>
               </li>

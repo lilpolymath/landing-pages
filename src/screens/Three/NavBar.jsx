@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
-import Hamburger from "../../common/Hamburger"
+import Hamburger from '../../common/Hamburger';
 import useWindowDimensions from '../../hooks/use-window-dimension';
-import styles from './style.module.css'
+import styles from './style.module.css';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -29,10 +29,11 @@ const NavBar = () => {
         </div>
         <ul className={styles.nav}>
           <li className={styles.nav_item}>
-            <a className={styles.active} href='#default'>
+            <a className={styles.link_inactive} href='#default'>
               Home
             </a>
           </li>
+
           <li className={styles.nav_item}>
             <a href='#default'>Contact</a>
           </li>
@@ -42,7 +43,7 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_links}>
           <li className={styles.nav_item}>
-            <a className={styles.active} href='#default'>
+            <a className={styles.link_inactive} href='#default'>
               Home
             </a>
           </li>

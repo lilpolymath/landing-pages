@@ -31,7 +31,7 @@ const NavBar = () => {
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
-                <a className='active' href='#default'>
+                <a className={styles.link_active} href='#default'>
                   Home
                 </a>
               </li>
@@ -46,12 +46,12 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_list}>
           <li className={styles.nav_item}>
-            <a className={styles.active} href='#default'>
+            <a className={styles.link_active} href='#default'>
               Home
             </a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Contact</a>
+            <a className={styles.link_active} href='#default'>Contact</a>
           </li>
         </ul>
       </animated.div>

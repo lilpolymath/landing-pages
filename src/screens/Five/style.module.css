@@ -1,9 +1,6 @@
 .body {
   background-color: #f96341;
   color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./A.svg');
 }
 
 /* NAVBAR */
@@ -29,7 +26,7 @@ nav {
 }
 
 .logo a {
-  font-size: 18px;
+  font-size: 3rem;
   line-height: 25px;
   font-weight: bold;
   text-decoration: none;
@@ -111,7 +108,7 @@ span:nth-of-type(2) {
 .menubar {
   background-color: #f96241;
   position: absolute;
-  width: 100%;
+  width: 102%;
   height: 100%;
   top: 150%;
   left: 50%;
@@ -121,14 +118,12 @@ span:nth-of-type(2) {
   will-change: opacity;
 }
 
-.menu_links,
-li,
-a {
-  color: #ffffffd1;
+.arrow > a {
+  color: #ffffff73;
   transition: 0.5s ease-in-out;
-  font-size: 18px;
-  margin: 12px 0;
+  font-size: 1.5rem;
   padding-right: 12px;
+  line-height: 2rem;
 }
 
 /* END OF MENUBAR */
@@ -214,6 +209,12 @@ a {
 }
 
 @media screen and (min-width: 769px) {
+  .body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./A.svg');
+  }
+
   .nav {
     display: flex;
     flex-direction: row;

@@ -44,8 +44,8 @@
   text-decoration: none;
 }
 
-a.active {
-  color: #ffffff;
+.active {
+  color: #ffffff !important;
 }
 
 /* HAMBURGER */
@@ -95,7 +95,7 @@ span:nth-of-type(2) {
 .menubar {
   background-color: #4737ff;
   position: absolute;
-  width: 100%;
+  width: 102%;
   height: 120px;
   top: 150%;
   left: 50%;
@@ -104,13 +104,12 @@ span:nth-of-type(2) {
   z-index: 10;
 }
 
-li,
-a {
-  color: #4737ff;
+.nav_item a {
+  color: #ffffffd1;
   transition: 0.5s ease-in-out;
-  font-size: 1.5rem;
-  margin: 12px 0;
+  font-size: 1.875rem;
   padding-right: 12px;
+  line-height: 2.5rem;
 }
 
 /* END OF MENUBAR */
