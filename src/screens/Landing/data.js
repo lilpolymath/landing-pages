@@ -31,7 +31,7 @@ export default [
   },
   {
     name: 'Near Moon',
-    path: '/six',
+    path: '',
     url:
       'https://res.cloudinary.com/favourcodes/image/upload/v1595209016/Headers/Header6_jw7tda.png',
   },

@@ -33,6 +33,9 @@ function App() {
         <Route path='/five'>
           <HeroFive />
         </Route>
+        <Route path='/six' render={() => <div>404</div>}>
+          <HeroFive />
+        </Route>
         <Route path='/seven'>
           <HeroSeven />
         </Route>

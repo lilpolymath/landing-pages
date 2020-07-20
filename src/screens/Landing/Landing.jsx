@@ -21,8 +21,13 @@ const Landing = () => {
               />
             </div>
             <div className={styles.overlay}>
+              {console.log(item.path)}
               <div className={styles.preview}>
-                <Link to={item.path}>Visit &#8594;</Link>
+                {item.path === '' ? (
+                  <p className={styles.chill}> Chill Small</p>
+                ) : (
+                  <Link to={item.path}>Visit &#8594;</Link>
+                )}
               </div>
             </div>
           </div>

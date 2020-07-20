@@ -82,3 +82,8 @@
   color: white;
   letter-spacing: 3px;
 }
+
+.chill {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
