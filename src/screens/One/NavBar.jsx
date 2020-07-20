@@ -26,24 +26,24 @@ const NavBar = () => {
     <div className={styles.pos}>
       <nav className={styles.header}>
         <div className={styles.logo}>
-          <a href='#default'>Gravity</a>
+          <a href='#one'>Gravity</a>
         </div>
         <div className={styles.left_nav}>
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
-                <a className={styles.active} href='#default'>
+                <a className={styles.active} href='#one'>
                   Home
                 </a>
               </li>
               <li className={styles.nav_item}>
-                <a href='#default'>Our Apps</a>
+                <a href='#one'>Our Apps</a>
               </li>
               <li className={styles.nav_item}>
-                <a href='#default'>Clients</a>
+                <a href='#one'>Clients</a>
               </li>
               <li className={styles.nav_item}>
-                <a href='#default'>Contact Us</a>
+                <a href='#one'>Contact Us</a>
               </li>
             </ul>
           </div>
@@ -58,16 +58,16 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_links}>
           <li className={styles.nav_item}>
-            <a href='#default'>Home</a>
+            <a href='#one'>Home</a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Our Apps</a>
+            <a href='#one'>Our Apps</a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Clients</a>
+            <a href='#one'>Clients</a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Contact Us</a>
+            <a href='#one'>Contact Us</a>
           </li>
         </ul>
       </animated.div>

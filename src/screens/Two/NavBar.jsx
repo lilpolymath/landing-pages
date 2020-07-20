@@ -7,7 +7,7 @@ import styles from './style.module.css';
 const NavBar = () => {
   return (
     <header>
-      <a href='#default' className={styles.logo}>
+      <a href='#' className={styles.logo}>
         Gravity
       </a>
       <nav>

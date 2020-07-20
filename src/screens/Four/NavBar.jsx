@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
-import Hamburger from "../../common/Hamburger"
+import Hamburger from '../../common/Hamburger';
 import useWindowDimensions from '../../hooks/use-window-dimension';
 import styles from './style.module.css';
 
@@ -25,18 +25,18 @@ const NavBar = () => {
     <div className={styles.pos}>
       <nav className={styles.header}>
         <div className={styles.logo}>
-          <a href='#default'>Gravity</a>
+          <a href='#four'>Gravity</a>
         </div>
         <div className={styles.left_nav}>
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
-                <a className={styles.link_active} href='#default'>
+                <a className={styles.link_active} href='#four'>
                   Home
                 </a>
               </li>
               <li className={styles.nav_item}>
-                <a href='#default'>Contact</a>
+                <a href='#four'>Contact</a>
               </li>
             </ul>
           </div>
@@ -46,12 +46,14 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_list}>
           <li className={styles.nav_item}>
-            <a className={styles.link_active} href='#default'>
+            <a className={styles.link_active} href='#four'>
               Home
             </a>
           </li>
           <li className={styles.nav_item}>
-            <a className={styles.link_active} href='#default'>Contact</a>
+            <a className={styles.link_active} href='#four'>
+              Contact
+            </a>
           </li>
         </ul>
       </animated.div>

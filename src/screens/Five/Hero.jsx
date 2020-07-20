@@ -11,7 +11,7 @@ const imageSrc =
 
 const Hero = () => {
   return (
-    <main className={styles.main}>
+    <main id='#main' className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.hero_text}>
           <h2 className={styles.main_text}>From Dreams to Reality</h2>

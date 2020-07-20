@@ -25,7 +25,7 @@ const NavBar = () => {
     <div className={styles.pos}>
       <nav className={styles.header}>
         <div className={styles.logo}>
-          <a href='#default'>Gravity</a>
+          <a href='#seven'>Gravity</a>
         </div>
         <div className={styles.search}>
           <svg

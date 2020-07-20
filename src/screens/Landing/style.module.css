@@ -1,15 +1,16 @@
 .main_text {
-  font-size: 3rem;
+  font-family: 'Circular STD';
+  font-size: 4rem;
   text-align: center;
-  line-height: 3.375rem;
-  margin: 1rem 0;
+  font-weight: 900;
+  margin-bottom: 3rem;
 }
 
 .desc {
   font-size: 1.875rem;
   text-align: center;
   line-height: 2rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .container {

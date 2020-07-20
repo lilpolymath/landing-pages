@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { animated, useSpring, config } from 'react-spring';
 
 import useWindowDimensions from '../../hooks/use-window-dimension';
-import styles from './style.module.css'
-
+import styles from './style.module.css';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const { width } = useWindowDimensions();
 
-  const none = styles.hamburger_icon + ' ' + styles.none
+  const none = styles.hamburger_icon + ' ' + styles.none;
 
   const toggleMenu = () => {
     if (width < 769) {
@@ -27,14 +26,14 @@ const NavBar = () => {
     <div className={styles.pos}>
       <nav className={styles.header}>
         <div className={styles.logo}>
-          <a href='#default'>Gravity</a>
+          <a href='#five'>Gravity</a>
         </div>
         <div className={styles.left_nav}>
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
                 <p className={styles.arrow}>
-                  <a href='#default'>Go to the projects </a> &#8594;
+                  <a href='#five'>Go to the projects </a> &#8594;
                 </p>
               </li>
             </ul>
@@ -50,12 +49,12 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_links}>
           <li className={styles.nav_item}>
-            <a className={styles.active} href='#default'>
+            <a className={styles.active} href='#five'>
               Home
             </a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Contact</a>
+            <a href='#five'>Contact</a>
           </li>
         </ul>
       </animated.div>

@@ -25,17 +25,17 @@ const NavBar = () => {
     <div className={styles.pos}>
       <nav className={styles.header}>
         <div className={styles.logo}>
-          <a href='#default'>Gravity</a>
+          <a href='#three'>Gravity</a>
         </div>
         <ul className={styles.nav}>
           <li className={styles.nav_item}>
-            <a className={styles.link_inactive} href='#default'>
+            <a className={styles.link_inactive} href='#three'>
               Home
             </a>
           </li>
 
           <li className={styles.nav_item}>
-            <a href='#default'>Contact</a>
+            <a href='#three'>Contact</a>
           </li>
         </ul>
         <Hamburger toggleMenu={toggleMenu} open={open} />
@@ -43,12 +43,12 @@ const NavBar = () => {
       <animated.div style={props} className={styles.menubar}>
         <ul className={styles.menu_links}>
           <li className={styles.nav_item}>
-            <a className={styles.link_inactive} href='#default'>
+            <a className={styles.link_inactive} href='#three'>
               Home
             </a>
           </li>
           <li className={styles.nav_item}>
-            <a href='#default'>Contact</a>
+            <a href='#three'>Contact</a>
           </li>
         </ul>
       </animated.div>
