@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './style.module.css';
 import data from './data';
 
 const Landing = () => {
-  const [hover, setHover] = useState(false);
   return (
     <>
       <h1 className={styles.main_text}>Gravity Headers</h1>
@@ -21,7 +20,9 @@ const Landing = () => {
                 {item.path === '' ? (
                   <p className={styles.chill}> Chill Small</p>
                 ) : (
-                  <Link to={item.path}>Visit &#8594;</Link>
+                  <Link aria-label={item.name} to={item.path}>
+                    Visit &#8594;
+                  </Link>
                 )}
               </div>
             </div>
