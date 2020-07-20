@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
+  position: relative;
 }
 
 .image_landing {
@@ -11,6 +12,16 @@
 
 .image_landing:hover {
   transform: scale(1.1);
+}
+
+.preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  padding: 12px;
+  color: white;
+  transform: translate(-50%, -50%);
 }
 
 .main_text {

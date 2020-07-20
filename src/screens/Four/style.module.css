@@ -50,8 +50,12 @@
   text-decoration: none;
 }
 
-a.active {
-  color: rgb(0, 0, 0);
+.nav > .nav_item {
+  margin-right: 5rem;
+}
+
+.link_active {
+  color: rgb(0, 0, 0) !important;
 }
 
 /* HAMBURGER */
@@ -109,14 +113,12 @@ span:nth-of-type(2) {
   z-index: 10;
 }
 
-.menu_links,
-li,
-a {
-  color: #d9d3d3;
+.nav_item a {
+  color: rgba(82, 82, 82, 0.54);
   transition: 0.5s ease-in-out;
-  font-size: 18px;
-  margin: 12px 0;
+  font-size: 1.875rem;
   padding-right: 12px;
+  line-height: 2.5rem;
 }
 
 /* END OF MENUBAR */

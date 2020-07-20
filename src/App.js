@@ -3,7 +3,7 @@ import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import './App.css';
 
-import Landing from './screens/Landing'
+import Landing from './screens/Landing';
 import HeroOne from './screens/One';
 import HeroTwo from './screens/Two';
 import HeroThree from './screens/Three';
@@ -21,11 +21,11 @@ function App() {
             path='/'
             // render={() => (
             //   <ul>
-            //     <li>
-            //       <Link style={{ color: 'black' }} to='/one'>
-            //         One
-            //       </Link>
-            //     </li>
+            // <li>
+            //   <Link style={{ color: 'black' }} to='/one'>
+            //     One
+            //   </Link>
+            // </li>
             //     <li>
             //       <Link style={{ color: 'black' }} to='/two'>
             //         Two

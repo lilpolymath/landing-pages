@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className={styles.nav_list}>
             <ul className={styles.nav}>
               <li className={styles.nav_item}>
-                <a className='active' href='#default'>
+                <a className={styles.active} href='#default'>
                   Home
                 </a>
               </li>
