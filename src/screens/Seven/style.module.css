@@ -204,6 +204,7 @@ span:nth-of-type(2) {
   width: 100px;
   height: 3px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -215,11 +216,23 @@ span:nth-of-type(2) {
   width: 100px;
   height: 3px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   background-color: #e6ca9b;
   cursor: pointer;
+}
+
+.numbers_active::before,
+.numbers::after {
+  position: absolute;
+  content: '';
+  top: -15px;
+  right: -15px;
+  left: -15px;
+  bottom: -15px;
+  z-index: 40;
 }
 
 /* END OF SLIDER */
