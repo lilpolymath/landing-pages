@@ -117,17 +117,17 @@ span:nth-of-type(2) {
 }
 
 .label {
-  font-size: 16px;
+  font-size: 1.5rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .main_text {
-  font-size: 54px;
+  font-size: 5.875rem;
   text-transform: capitalize;
   font-weight: bold;
-  line-height: 64px;
+  line-height: 6.25rem;
 }
 
 .hero_text {
@@ -135,9 +135,9 @@ span:nth-of-type(2) {
 }
 
 .desc {
-  font-size: 18px;
+  font-size: 2rem;
   color: rgba(22, 22, 22, 0.8);
-  line-height: 28px;
+  line-height: 2.5rem;
   margin: 30px 0;
 }
 
@@ -284,16 +284,7 @@ span:nth-of-type(2) {
     width: 90%;
   }
 
-  .main_text {
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1px;
-  }
-
   .label {
-    font-size: 14px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
     margin-bottom: 1em;
   }
 

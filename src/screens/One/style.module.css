@@ -137,16 +137,17 @@ span:nth-of-type(2) {
 }
 
 .label {
-  font-size: 16px;
+  font-size: 1.5rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .main_text {
-  font-size: 54px;
+  font-size: 6rem;
   text-transform: capitalize;
-  line-height: 64px;
+  line-height: 6.25rem;
+  letter-spacing: -1px;
 }
 
 .desc {
@@ -267,20 +268,8 @@ footer {
     margin-top: 80px;
   }
 
-  .desc {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .main_text {
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1px;
-  }
 
   .label {
-    font-size: 14px;
-    letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 1em;
   }
